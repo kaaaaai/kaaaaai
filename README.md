@@ -4,9 +4,9 @@ Kaaaaai is an iOS Developer from China.
 
 He is always curious and interested in technology and love.
 
-**Favorite things：**reading、movie、thinking、running、drawing.
+**Favorite things：** reading、movie、thinking、running、drawing.
 
-**DisLike：**Being Labeled.
+**DisLike：** Being Labeled.
 
 **Skills：**`Objective-C`**、**`Swift`**、**`Java`.
 
