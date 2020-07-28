@@ -1,3 +1,5 @@
+<img align="right" src="https://github.com/kaaaaai/kaaaaai/blob/master/Diary%20Love%20일기사랑%20(TK).gif" alt="Illustration of Kaya speaking at a conference with coding bubbles in background" width=350px height=465px/>
+
 ### Hi there 👋
 
 Kaaaaai is an iOS Developer from China.
@@ -9,8 +11,6 @@ He is always curious and interested in technology and love.
 - 😑 DisLike：Being Labeled.
 
 - 🧰 Skills：`Objective-C`、`Swift`、`Java`.
-
-<iframe width="873" height="491" src="https://www.youtube.com/embed/bpwN4UztLgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
