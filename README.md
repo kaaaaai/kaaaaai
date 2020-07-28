@@ -4,11 +4,11 @@ Kaaaaai is an iOS Developer from China.
 
 He is always curious and interested in technology and love.
 
-**Favorite things：** reading、movie、thinking、running、drawing.
+- 🕺 Favorite things：reading、movie、thinking、running、drawing.
 
-**DisLike：** Being Labeled.
+- 😑 DisLike：Being Labeled.
 
-**Skills：**`Objective-C`**、**`Swift`**、**`Java`.
+- 🧰 Skills：`Objective-C`、`Swift`、`Java`.
 
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
