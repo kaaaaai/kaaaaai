@@ -1,4 +1,4 @@
-<img align="left" src="https://github.com/kaaaaai/kaaaaai/blob/master/Diary%20Love%20일기사랑%20(TK).gif" alt="Illustration of Kaya speaking at a conference with coding bubbles in background" width=250 height=322.5px/>
+<img align="right" src="https://github.com/kaaaaai/kaaaaai/blob/master/Diary%20Love%20일기사랑%20(TK).gif" alt="Illustration of Kaya speaking at a conference with coding bubbles in background" width=250 height=322.5px/>
 
 ### Hi there 👋
 
