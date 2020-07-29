@@ -1,4 +1,4 @@
-<img align="" src="https://github.com/kaaaaai/kaaaaai/blob/master/b4cf5acf-fa38-406e-9aae-e6ad25373143.png" alt="Illustration of Kaya speaking at a conference with coding bubbles in background" width=1280 height=720/>
+<img align="right" src="https://github.com/kaaaaai/kaaaaai/blob/master/giphy.gif" alt="Illustration of Kaya speaking at a conference with coding bubbles in background" width=500 height=708/>
 
 ### Hi there 👋
 
