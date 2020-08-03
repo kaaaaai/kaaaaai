@@ -12,9 +12,7 @@ He is always curious and interested in technology and love.
 
 - 🧰 Skills：`Objective-C`、`Swift`、`Java`.
 
-[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=Kaaaaai&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-rname=Kaaaaai&show_icons=true&theme=radical)
+[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=Kaaaaai&layout=compact)](https://kaaaaai.cn/)
 
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
