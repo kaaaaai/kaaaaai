@@ -10,8 +10,9 @@ He is always curious and interested in technology and love.
 
 - 🧰 Skills：`Objective-C`、`Swift`、`Java`.
 
+[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
 
-## 博客最近更新
+## ✏️ 博客最近更新
 
 <!-- blog starts -->
 - [2023 年终总结丨随时开始奔跑的心气](https://www.kaaaaai.cn/2024-year-end-review.html)
@@ -28,7 +29,7 @@ He is always curious and interested in technology and love.
 
 更多内容直接点击：[https://www.kaaaaai.cn](https://www.kaaaaai.cn)
 
-## 豆瓣最近活动
+## 🛸 书影音最近体验
 
 <!-- douban starts -->
 - [读过骗子家族](https://book.douban.com/subject/36427040/) 2024-07-04
@@ -43,10 +44,14 @@ He is always curious and interested in technology and love.
 - [想看普罗旺斯的夏天](http://movie.douban.com/subject/25858604/) 2024-06-16
 <!-- douban ends -->
 
-[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
 
+## 👨🏻‍💻 最近一周编码
 
-<!-- ## 最近一周编码 -->
+![light](https://raw.githubusercontent.com/kaaaaai/kaaaaai/master/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
+
+<!-- code_time starts -->
+
+<!-- code_time ends -->
 
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
