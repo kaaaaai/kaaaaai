@@ -33,16 +33,16 @@ He is always curious and interested in technology and love.
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-- [看过维和防暴队](http://movie.douban.com/subject/35371629/) 2024-06-28
-- [看过我才不要和你做朋友呢](http://movie.douban.com/subject/35208466/) 2024-06-28
-- [看过疯狂的麦克斯：狂暴女神](http://movie.douban.com/subject/34996127/) 2024-06-28
-- [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
-- [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
-- [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
-- [看过临时劫案](http://movie.douban.com/subject/35491115/) 2024-04-26
-- [看过哥斯拉大战金刚2：帝国崛起](http://movie.douban.com/subject/35453251/) 2024-04-26
-- [看过周处除三害](http://movie.douban.com/subject/36151692/) 2024-04-26
-- [看过飞驰人生2](http://movie.douban.com/subject/36369452/) 2024-04-26
+- [读过骗子家族](https://book.douban.com/subject/36427040/) 2024-07-04
+- [想看夏天的故事](http://movie.douban.com/subject/1302675/) 2024-07-03
+- [想看吸血鬼生活 第一季](http://movie.douban.com/subject/30122624/) 2024-07-03
+- [想看办公室 第一季](http://movie.douban.com/subject/10529476/) 2024-07-03
+- [想看星际迷航：奇异新世界 第一季](http://movie.douban.com/subject/35069688/) 2024-07-03
+- [看过辐射 第一季](http://movie.douban.com/subject/35128081/) 2024-06-16
+- [想看嘉年华](http://movie.douban.com/subject/27019527/) 2024-06-16
+- [想看华盛顿邮报](http://movie.douban.com/subject/26990609/) 2024-06-16
+- [想看达拉斯买家俱乐部](http://movie.douban.com/subject/1793929/) 2024-06-16
+- [想看普罗旺斯的夏天](http://movie.douban.com/subject/25858604/) 2024-06-16
 <!-- douban ends -->
 
 
