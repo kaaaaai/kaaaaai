@@ -8,9 +8,9 @@ He is always curious and interested in technology and love.
 
 - 😑 DisLike：Being Labeled.
 
-- 🧰 Skills：`Objective-C`、`Swift`、`Java`.
+- 🧰 Skills：`Swift`、`Objective-C`、`Dart`、`Java`、`Python`、`Kotlin`.
 
-[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
+<!-- [![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/) -->
 
 ## ✏️ 博客最近更新
 
