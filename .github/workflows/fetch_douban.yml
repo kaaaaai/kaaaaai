@@ -1,0 +1,46 @@
+name: fetch douban
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0/3 * * *"
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  douban:
+    name: Douban mark data sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: movie
+        uses: lizheming/doumark-action@master
+        with:
+          id: chensoul
+          type: movie
+          format: csv
+          dir: ./data
+      - name: music
+        uses: lizheming/doumark-action@master
+        with:
+          id: chensoul
+          type: music
+          format: csv
+          dir: ./data
+      - name: book
+        uses: lizheming/doumark-action@master
+        with:
+          id: chensoul
+          type: book
+          format: csv
+          dir: ./data
+      - name: Commit and push if changed
+        run: |-
+          git pull
+          git diff
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          git commit -m "ci: sync douban mark data" || exit 0
+          git push
