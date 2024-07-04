@@ -120,7 +120,7 @@ def fetch_douban():
 
 
 def fetch_blog_entries():
-    entries = feedparser.parse("https://blog.chensoul.cc/index.xml")["entries"]
+    entries = feedparser.parse("https://kaaaaai.cn/atom.xml")["entries"]
     return [
         {
             "title": entry["title"],
