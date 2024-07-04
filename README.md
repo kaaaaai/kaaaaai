@@ -10,8 +10,6 @@ He is always curious and interested in technology and love.
 
 - 🧰 Skills：`Objective-C`、`Swift`、`Java`.
 
-[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
-
 
 ## 博客最近更新
 
@@ -45,8 +43,10 @@ He is always curious and interested in technology and love.
 - [想看普罗旺斯的夏天](http://movie.douban.com/subject/25858604/) 2024-06-16
 <!-- douban ends -->
 
+[![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
 
-## 最近一周编码
+
+<!-- ## 最近一周编码 -->
 
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
