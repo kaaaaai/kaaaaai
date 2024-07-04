@@ -108,7 +108,7 @@ def fetch_releases(oauth_token):
 
 def fetch_douban():
     entries = feedparser.parse(
-        "https://www.douban.com/feed/people/chensoul/interests")["entries"]
+        "https://www.douban.com/feed/people/kaaaaai/interests")["entries"]
     return [
         {
             "title": item["title"],
