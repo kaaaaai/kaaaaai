@@ -17,21 +17,21 @@ jobs:
       - name: movie
         uses: lizheming/doumark-action@master
         with:
-          id: chensoul
+          id: kaaaaai
           type: movie
           format: csv
           dir: ./data
       - name: music
         uses: lizheming/doumark-action@master
         with:
-          id: chensoul
+          id: kaaaaai
           type: music
           format: csv
           dir: ./data
       - name: book
         uses: lizheming/doumark-action@master
         with:
-          id: chensoul
+          id: kaaaaai
           type: book
           format: csv
           dir: ./data

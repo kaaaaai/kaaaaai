@@ -51,14 +51,14 @@ def save_yesterday():
             day, '%Y-%m-%dT%H:%M:%SZ') + timedelta(hours=8)
         normal_date = date.strftime('%Y-%m-%d')
 
-        if cost > 0:
-            china_date_str = date.strftime('%Y年%m月%d日')
-            memos_data = {
-                "content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}
-            json_data = json.dumps(memos_data)
+        # if cost > 0:
+        #     china_date_str = date.strftime('%Y年%m月%d日')
+        #     memos_data = {
+        #         "content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}
+        #     json_data = json.dumps(memos_data)
 
-            requests.post(f'https://memos.chensoul.cc/api/v1/memo',
-                          data=json_data, headers={'Content-Type': 'application/json', "Authorization": f'Bearer {memos_token}'})
+        #     requests.post(f'https://memos.chensoul.cc/api/v1/memo',
+        #                   data=json_data, headers={'Content-Type': 'application/json', "Authorization": f'Bearer {memos_token}'})
 
         # 将数据写入 CSV 文件
         with open('data/coding.csv', 'a', newline='') as f:
