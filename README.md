@@ -16,16 +16,16 @@ He is always curious and interested in technology and love.
 ## 博客最近更新
 
 <!-- blog starts -->
-- [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
-- [使用Docker安装和配置Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
-- [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
-- [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
-- [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
-- [All things about OAuth](https://blog.chensoul.cc/posts/2024/06/06/all-things-about-oauth/)
-- [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
-- [JWT](https://blog.chensoul.cc/posts/2024/06/06/jwt/)
-- [OAuth2和OIDC区别](https://blog.chensoul.cc/posts/2024/06/06/oauth2-oidc/)
-- [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
+- [2023 年终总结丨随时开始奔跑的心气](https://www.kaaaaai.cn/2024-year-end-review.html)
+- [2022 年终总结丨惠存这一年](https://www.kaaaaai.cn/2023-year-end-review.html)
+- [翻译：Why use dependency injection](https://www.kaaaaai.cn/translation-why-use-dependency-injection.html)
+- [是时候维护一个属于自己的开源库了](https://www.kaaaaai.cn/its-time-to-build-an-open-source-library.html)
+- [iOS 端豆瓣开源许可提到的库](https://www.kaaaaai.cn/ios-douban-open-source-license-mentioned-in-the-library.html)
+- [推荐几个播客节目](https://www.kaaaaai.cn/recommend-a-few-podcasts.html)
+- [iOS 自动化打包上传 AppleStore、fir.im，并发邮件通知测试人员](https://www.kaaaaai.cn/ios-automated-packaging-complicated-by-mail.html)
+- [业余剪辑自我修养](https://www.kaaaaai.cn/amateur-clipsself-improvement.html)
+- [Swift - 权限请求封装](https://www.kaaaaai.cn/swift-permission-request-tools.html)
+- [iOS - HMAC 加密算法和一个 MD5 加密的问题](https://www.kaaaaai.cn/ios-hmac-encryption-and-an-md5-problem.html)
 <!-- blog ends -->
 
 更多内容直接点击：[https://www.kaaaaai.cn](https://www.kaaaaai.cn)
