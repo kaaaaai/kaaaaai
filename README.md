@@ -12,6 +12,23 @@ He is always curious and interested in technology and love.
 
 [![Kaaaaai](https://github-readme-stats.vercel.app/api/top-langs/?username=kaaaaai&layout=compact)](https://kaaaaai.cn/)
 
+
+## 博客最近更新
+
+<!-- blog starts -->
+
+<!-- blog ends -->
+
+更多内容直接点击：[https://www.kaaaaai.cn](https://www.kaaaaai.cn)
+
+## 豆瓣最近活动
+
+<!-- douban starts -->
+<!-- douban ends -->
+
+
+## 最近一周编码
+
 <!--
 **kaaaaai/kaaaaai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 ![Kaaaaai's github stats](https://github-readme-stats.vercel.app/api?use
