@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: tw93/wakatime-charts@master
         with:
-          BRANCH_NAME: main
+          BRANCH_NAME: master
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # only required if using the action in repository other than profile
