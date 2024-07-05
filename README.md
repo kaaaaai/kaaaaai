@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过阳明学述要](https://book.douban.com/subject/35690031/) 2024-07-05
+- [读过小狗钱钱](https://book.douban.com/subject/35295592/) 2024-07-05
+- [读过绝叫](https://book.douban.com/subject/35031587/) 2024-07-05
+- [读过判决](https://book.douban.com/subject/35219184/) 2024-07-05
 - [读过骗子家族](https://book.douban.com/subject/36427040/) 2024-07-04
 - [想看夏天的故事](http://movie.douban.com/subject/1302675/) 2024-07-03
 - [想看吸血鬼生活 第一季](http://movie.douban.com/subject/30122624/) 2024-07-03
 - [想看办公室 第一季](http://movie.douban.com/subject/10529476/) 2024-07-03
 - [想看星际迷航：奇异新世界 第一季](http://movie.douban.com/subject/35069688/) 2024-07-03
 - [看过辐射 第一季](http://movie.douban.com/subject/35128081/) 2024-06-16
-- [想看嘉年华](http://movie.douban.com/subject/27019527/) 2024-06-16
-- [想看华盛顿邮报](http://movie.douban.com/subject/26990609/) 2024-06-16
-- [想看达拉斯买家俱乐部](http://movie.douban.com/subject/1793929/) 2024-06-16
-- [想看普罗旺斯的夏天](http://movie.douban.com/subject/25858604/) 2024-06-16
 <!-- douban ends -->
 
 
