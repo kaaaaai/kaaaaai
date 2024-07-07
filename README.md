@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过夜色温柔](https://book.douban.com/subject/27594900/) 2024-07-06
 - [读过阳明学述要](https://book.douban.com/subject/35690031/) 2024-07-05
 - [读过小狗钱钱](https://book.douban.com/subject/35295592/) 2024-07-05
 - [读过绝叫](https://book.douban.com/subject/35031587/) 2024-07-05
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看吸血鬼生活 第一季](http://movie.douban.com/subject/30122624/) 2024-07-03
 - [想看办公室 第一季](http://movie.douban.com/subject/10529476/) 2024-07-03
 - [想看星际迷航：奇异新世界 第一季](http://movie.douban.com/subject/35069688/) 2024-07-03
-- [看过辐射 第一季](http://movie.douban.com/subject/35128081/) 2024-06-16
 <!-- douban ends -->
 
 
