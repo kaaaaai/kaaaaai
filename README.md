@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
-- [读过夜色温柔](https://book.douban.com/subject/27594900/) 2024-07-06
-- [读过阳明学述要](https://book.douban.com/subject/35690031/) 2024-07-05
-- [读过小狗钱钱](https://book.douban.com/subject/35295592/) 2024-07-05
-- [读过绝叫](https://book.douban.com/subject/35031587/) 2024-07-05
-- [读过判决](https://book.douban.com/subject/35219184/) 2024-07-05
-- [读过骗子家族](https://book.douban.com/subject/36427040/) 2024-07-04
-- [想看夏天的故事](http://movie.douban.com/subject/1302675/) 2024-07-03
-- [想看吸血鬼生活 第一季](http://movie.douban.com/subject/30122624/) 2024-07-03
-- [想看办公室 第一季](http://movie.douban.com/subject/10529476/) 2024-07-03
-- [想看星际迷航：奇异新世界 第一季](http://movie.douban.com/subject/35069688/) 2024-07-03
+- [看过去唱卡拉OK吧！](http://movie.douban.com/subject/35863319/) 2024-07-13
+- [想看咖啡与香烟](http://movie.douban.com/subject/1394176/) 2024-07-13
+- [想看八月：奥色治郡](http://movie.douban.com/subject/3284397/) 2024-07-13
+- [想看半梦半醒的人生](http://movie.douban.com/subject/1304981/) 2024-07-13
+- [想看小小的白色谎言](http://movie.douban.com/subject/3742987/) 2024-07-13
+- [想看漂流](http://movie.douban.com/subject/35603727/) 2024-07-13
+- [想看同意](http://movie.douban.com/subject/35679961/) 2024-07-13
+- [想看唯一的家园](http://movie.douban.com/subject/36741506/) 2024-07-13
+- [想看人间诗句](http://movie.douban.com/subject/36359498/) 2024-07-13
+- [想看十字路口的猪](http://movie.douban.com/subject/36889438/) 2024-07-13
 <!-- douban ends -->
 
 
