@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过胭脂扣](http://movie.douban.com/subject/1299288/) 2024-07-14
 - [看过去唱卡拉OK吧！](http://movie.douban.com/subject/35863319/) 2024-07-13
 - [想看咖啡与香烟](http://movie.douban.com/subject/1394176/) 2024-07-13
 - [想看八月：奥色治郡](http://movie.douban.com/subject/3284397/) 2024-07-13
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看同意](http://movie.douban.com/subject/35679961/) 2024-07-13
 - [想看唯一的家园](http://movie.douban.com/subject/36741506/) 2024-07-13
 - [想看人间诗句](http://movie.douban.com/subject/36359498/) 2024-07-13
-- [想看十字路口的猪](http://movie.douban.com/subject/36889438/) 2024-07-13
 <!-- douban ends -->
 
 
