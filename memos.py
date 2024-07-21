@@ -7,7 +7,7 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.chensoul.cc/api/v1/memo'
+url = f'https://memos.kaaaaai.cn/api/v1/memo'
 
 
 def create_diary():

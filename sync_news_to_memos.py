@@ -99,7 +99,7 @@ message = '\n\n'.join(all_data)
 
 print(message)
 
-url = f'https://memos.chensoul.cc/api/v1/memo'
+url = f'https://memos.kaaaaai.cn/api/v1/memo'
 payload = {
     "content": message
 }

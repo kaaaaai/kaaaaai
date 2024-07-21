@@ -9,7 +9,7 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.chensoul.cc/api/v1/memo'
+url = f'https://memos.kaaaaai.cn/api/v1/memo'
 
 keyword = '#日记'
 
@@ -48,7 +48,7 @@ if response.status_code == 200:
         content = content.split('\n')[0].replace(',', '，').replace('**', '')
         # content = content.replace('\n', "")
 
-        url = 'https://memos.chensoul.cc/m/{} '.format(d['id'])
+        url = 'https://memos.kaaaaai.cn/m/{} '.format(d['id'])
 
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:
