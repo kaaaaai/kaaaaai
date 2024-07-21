@@ -6,7 +6,7 @@ load_dotenv()
 pinboard_api_key = os.getenv('pinboard_api_key')
 memos_token = os.getenv('MEMOS_TOKEN')
 
-memos_endpoint = 'https://memos.kaaaaai.cn/api/v1/memo'
+memos_endpoint = 'https://memos.kaaaaai.cn/api/v1/memos'
 
 def fetch_pinboard_data():
     url = 'https://api.pinboard.in/v1/posts/all'

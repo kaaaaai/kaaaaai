@@ -57,7 +57,7 @@ def save_yesterday():
                 "content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}
             json_data = json.dumps(memos_data)
 
-            requests.post(f'https://memos.kaaaaai.cn/api/v1/memo',
+            requests.post(f'https://memos.kaaaaai.cn/api/v1/memos',
                           data=json_data, headers={'Content-Type': 'application/json', "Authorization": f'Bearer {memos_token}'})
 
         # 将数据写入 CSV 文件

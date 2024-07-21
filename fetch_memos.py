@@ -9,7 +9,7 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.kaaaaai.cn/api/v1/memo'
+url = f'https://memos.kaaaaai.cn/api/v1/memos'
 
 keyword = '#日记'
 
@@ -36,11 +36,12 @@ if response.status_code == 200:
         writer = csv.writer(f)
         writer.writerow(['day', 'time', 'url', 'content'])
 
+    memos = data['memos']
+
     # 将数据转换为 Markdown 格式，并处理 URL
-    for d in recent_data:
+    for d in memos:
         # if keyword in content:
-        created_time = datetime.fromtimestamp(
-            d['createdTs'])
+        created_time = datetime.fromisoformat(d['createTime'].rstrip('Z'))
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
@@ -48,7 +49,7 @@ if response.status_code == 200:
         content = content.split('\n')[0].replace(',', '，').replace('**', '')
         # content = content.replace('\n', "")
 
-        url = 'https://memos.kaaaaai.cn/m/{} '.format(d['id'])
+        url = 'https://memos.kaaaaai.cn/m/{} '.format(d['uid'])
 
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:
