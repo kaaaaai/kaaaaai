@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看私恋失调](http://movie.douban.com/subject/1300211/) 2024-08-10
+- [想看木更津猫眼](http://movie.douban.com/subject/1465676/) 2024-08-10
+- [想看少年收容所](http://movie.douban.com/subject/20470260/) 2024-08-10
+- [想看银河系第二好医院 第一季](http://movie.douban.com/subject/36580500/) 2024-08-10
+- [看过无敌少侠 第二季](http://movie.douban.com/subject/35545737/) 2024-08-10
 - [想看诗](http://movie.douban.com/subject/35641752/) 2024-08-02
 - [看过泳者之心](http://movie.douban.com/subject/26656728/) 2024-08-02
 - [看过从21世纪安全撤离](http://movie.douban.com/subject/26816104/) 2024-07-28
 - [读过邦查女孩](https://book.douban.com/subject/30276134/) 2024-07-28
 - [想看终极天将](http://movie.douban.com/subject/1301604/) 2024-07-28
-- [想看毒液：最后一舞](http://movie.douban.com/subject/35087675/) 2024-07-27
-- [看过死侍与金刚狼](http://movie.douban.com/subject/26957900/) 2024-07-27
-- [想看焦虑贝鲁特](http://movie.douban.com/subject/36406124/) 2024-07-21
-- [看过朱同在三年级丢失了超能力](http://movie.douban.com/subject/35749842/) 2024-07-21
-- [看过红毯先生](http://movie.douban.com/subject/35494829/) 2024-07-21
 <!-- douban ends -->
 
 
