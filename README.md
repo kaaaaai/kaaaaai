@@ -15,16 +15,7 @@ He is always curious and interested in technology and love.
 ## ✏️ 博客最近更新
 
 <!-- blog starts -->
-- [2023 年终总结丨随时开始奔跑的心气](https://www.kaaaaai.cn/2024-year-end-review.html)
-- [2022 年终总结丨惠存这一年](https://www.kaaaaai.cn/2023-year-end-review.html)
-- [翻译：Why use dependency injection](https://www.kaaaaai.cn/translation-why-use-dependency-injection.html)
-- [是时候维护一个属于自己的开源库了](https://www.kaaaaai.cn/its-time-to-build-an-open-source-library.html)
-- [iOS 端豆瓣开源许可提到的库](https://www.kaaaaai.cn/ios-douban-open-source-license-mentioned-in-the-library.html)
-- [推荐几个播客节目](https://www.kaaaaai.cn/recommend-a-few-podcasts.html)
-- [iOS 自动化打包上传 AppleStore、fir.im，并发邮件通知测试人员](https://www.kaaaaai.cn/ios-automated-packaging-complicated-by-mail.html)
-- [业余剪辑自我修养](https://www.kaaaaai.cn/amateur-clipsself-improvement.html)
-- [Swift - 权限请求封装](https://www.kaaaaai.cn/swift-permission-request-tools.html)
-- [iOS - HMAC 加密算法和一个 MD5 加密的问题](https://www.kaaaaai.cn/ios-hmac-encryption-and-an-md5-problem.html)
+
 <!-- blog ends -->
 
 更多内容直接点击：[https://www.kaaaaai.cn](https://www.kaaaaai.cn)
