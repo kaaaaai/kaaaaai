@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看杀手寓言 第二章](http://movie.douban.com/subject/35184151/) 2024-09-01
+- [看过首](http://movie.douban.com/subject/35359717/) 2024-09-01
 - [看过因果报应](http://movie.douban.com/subject/36934908/) 2024-08-30
 - [想看姥姥的外孙](http://movie.douban.com/subject/36328210/) 2024-08-26
 - [读过影响力](https://book.douban.com/subject/35637771/) 2024-08-18
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看木更津猫眼](http://movie.douban.com/subject/1465676/) 2024-08-10
 - [想看少年收容所](http://movie.douban.com/subject/20470260/) 2024-08-10
 - [想看银河系第二好医院 第一季](http://movie.douban.com/subject/36580500/) 2024-08-10
-- [看过无敌少侠 第二季](http://movie.douban.com/subject/35545737/) 2024-08-10
-- [想看诗](http://movie.douban.com/subject/35641752/) 2024-08-02
 <!-- douban ends -->
 
 
