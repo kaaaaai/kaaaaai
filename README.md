@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过初恋这首情歌](http://movie.douban.com/subject/25855071/) 2024-09-01
+- [看过狗神](http://movie.douban.com/subject/35736202/) 2024-09-01
+- [想读过渡劳动](https://book.douban.com/subject/36985251/) 2024-09-01
+- [想读猫鱼](https://book.douban.com/subject/36659710/) 2024-09-01
+- [想读怪画谜案](https://book.douban.com/subject/36858240/) 2024-09-01
+- [想读我们时代的神经与精神疾病](https://book.douban.com/subject/36930293/) 2024-09-01
+- [想读他们涉海而来](https://book.douban.com/subject/36832310/) 2024-09-01
+- [想读食南之徒](https://book.douban.com/subject/36710597/) 2024-09-01
 - [想看杀手寓言 第二章](http://movie.douban.com/subject/35184151/) 2024-09-01
 - [看过首](http://movie.douban.com/subject/35359717/) 2024-09-01
-- [看过因果报应](http://movie.douban.com/subject/36934908/) 2024-08-30
-- [想看姥姥的外孙](http://movie.douban.com/subject/36328210/) 2024-08-26
-- [读过影响力](https://book.douban.com/subject/35637771/) 2024-08-18
-- [看过花月杀手](http://movie.douban.com/subject/26745332/) 2024-08-15
-- [想看私恋失调](http://movie.douban.com/subject/1300211/) 2024-08-10
-- [想看木更津猫眼](http://movie.douban.com/subject/1465676/) 2024-08-10
-- [想看少年收容所](http://movie.douban.com/subject/20470260/) 2024-08-10
-- [想看银河系第二好医院 第一季](http://movie.douban.com/subject/36580500/) 2024-08-10
 <!-- douban ends -->
 
 
