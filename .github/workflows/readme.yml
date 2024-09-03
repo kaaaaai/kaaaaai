@@ -1,7 +1,6 @@
 name: build readme
 
 on:
-  # push:
   workflow_dispatch:
   schedule:
     - cron: "5 0 * * *"
@@ -14,15 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.9
 
       - name: Configure pip caching
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -36,11 +35,11 @@ jobs:
       - name: Run python
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        run: |-
+        run: |
           python build_readme.py README.md
 
       - name: Commit and push if changed
-        run: |-
+        run: |
           git pull
           git diff
           git config --global user.email "action@github.com"
