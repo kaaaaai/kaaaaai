@@ -94,18 +94,28 @@ async def fetch_releases(oauth_token: str) -> List[Dict[str, Any]]:
     return releases
 
 async def fetch_douban() -> List[Dict[str, Any]]:
-    async with httpx.AsyncClient() as client:
-        response = await client.get("https://www.douban.com/feed/people/kaaaaai/interests")
-        response.raise_for_status()
-        feed = feedparser.parse(response.text)
-        return [
-            {
-                "title": item["title"],
-                "url": item["link"].split("#")[0],
-                "published": format_gmt_time(item["published"])
-            }
-            for item in feed["entries"]
-        ]
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+    async with httpx.AsyncClient(headers=headers) as client:
+        try:
+            response = await client.get("https://www.douban.com/feed/people/kaaaaai/interests", timeout=10.0)
+            response.raise_for_status()
+            feed = feedparser.parse(response.text)
+            return [
+                {
+                    "title": item["title"],
+                    "url": item["link"].split("#")[0],
+                    "published": format_gmt_time(item["published"])
+                }
+                for item in feed["entries"]
+            ]
+        except httpx.HTTPStatusError as e:
+            print(f"Error fetching Douban data: {e}")
+            return []
+        except Exception as e:
+            print(f"Unexpected error fetching Douban data: {e}")
+            return []
 
 async def fetch_blog_entries() -> List[Dict[str, Any]]:
     async with httpx.AsyncClient() as client:
@@ -147,10 +157,13 @@ async def main():
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
     doubans = await fetch_douban()
-    doubans_md = "\n".join(
-        ["- [{title}]({url}) {published}".format(**item) for item in doubans[:10]]
-    )
-    rewritten = replace_chunk(rewritten, "douban", doubans_md)
+    if doubans:
+        doubans_md = "\n".join(
+            ["- [{title}]({url}) {published}".format(**item) for item in doubans[:10]]
+        )
+        rewritten = replace_chunk(rewritten, "douban", doubans_md)
+    else:
+        print("Skipping Douban update due to error.")
 
     entries = await fetch_blog_entries()
     entries_md = "\n".join(
