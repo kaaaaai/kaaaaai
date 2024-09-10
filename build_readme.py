@@ -1,3 +1,4 @@
+import asyncio
 from python_graphql_client import GraphqlClient
 import feedparser
 import httpx
@@ -7,33 +8,29 @@ import re
 import os
 import sys
 import datetime
+from typing import List, Dict, Any
 
 root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 GITHUB_TOKEN = os.environ.get("PERSONAL_TOKEN", "")
 
-
-def replace_chunk(content, marker, chunk, inline=False):
+def replace_chunk(content: str, marker: str, chunk: str, inline: bool = False) -> str:
     r = re.compile(
         r"<!\-\- {} starts \-\->.*<!\-\- {} ends \-\->".format(marker, marker),
         re.DOTALL,
     )
     if not inline:
         chunk = "\n{}\n".format(chunk)
-    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(
-        marker, chunk, marker)
+    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(marker, chunk, marker)
     return r.sub(chunk, content)
 
-
-def formatGMTime(timestamp):
+def format_gmt_time(timestamp: str) -> datetime.date:
     GMT_FORMAT = '%a, %d %b %Y %H:%M:%S GMT'
-    dateStr = datetime.datetime.strptime(
-        timestamp, GMT_FORMAT) + datetime.timedelta(hours=8)
-    return dateStr.date()
+    date_str = datetime.datetime.strptime(timestamp, GMT_FORMAT) + datetime.timedelta(hours=8)
+    return date_str.date()
 
-
-def make_query(after_cursor=None):
+def make_query(after_cursor: str = None) -> str:
     return """
 query {
   viewer {
@@ -62,64 +59,54 @@ query {
         "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
     )
 
-
-def fetch_releases(oauth_token):
-    repos = []
+async def fetch_releases(oauth_token: str) -> List[Dict[str, Any]]:
     releases = []
     repo_names = set()
     has_next_page = True
     after_cursor = None
 
-    while has_next_page:
-        data = client.execute(
-            query=make_query(after_cursor),
-            headers={"Authorization": "Bearer {}".format(oauth_token)},
-        )
+    async with httpx.AsyncClient() as client:
+        while has_next_page:
+            response = await client.post(
+                "https://api.github.com/graphql",
+                json={"query": make_query(after_cursor)},
+                headers={"Authorization": f"Bearer {oauth_token}"}
+            )
+            data = response.json()
 
-        print(data)
-
-        for repo in data["data"]["viewer"]["repositories"]["nodes"]:
-            if repo["releases"]["totalCount"] and repo["name"] not in repo_names:
-                releases_nodes = repo["releases"]["nodes"]
-                filtered_nodes = [
-                    node for node in releases_nodes if node["publishedAt"]]
-                if filtered_nodes:
-                    latest_release = filtered_nodes[-1]
-                    repos.append(repo)
-                    repo_names.add(repo["name"])
-                    releases.append(
-                        {
+            for repo in data["data"]["viewer"]["repositories"]["nodes"]:
+                if repo["releases"]["totalCount"] and repo["name"] not in repo_names:
+                    releases_nodes = repo["releases"]["nodes"]
+                    filtered_nodes = [node for node in releases_nodes if node["publishedAt"]]
+                    if filtered_nodes:
+                        latest_release = filtered_nodes[-1]
+                        repo_names.add(repo["name"])
+                        releases.append({
                             "repo": repo["name"],
                             "repo_url": repo["url"],
                             "description": repo["description"],
                             "release": latest_release["name"].replace(repo["name"], "").strip(),
                             "published_at": latest_release["publishedAt"].split("T")[0],
                             "url": latest_release["url"],
-                        }
-                    )
+                        })
 
-        has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"]["hasNextPage"]
-        after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
-
-    print(releases)
+            has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"]["hasNextPage"]
+            after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
 
     return releases
 
-
-def fetch_douban():
-    entries = feedparser.parse(
-        "https://www.douban.com/feed/people/kaaaaai/interests")["entries"]
+def fetch_douban() -> List[Dict[str, Any]]:
+    entries = feedparser.parse("https://www.douban.com/feed/people/kaaaaai/interests")["entries"]
     return [
         {
             "title": item["title"],
             "url": item["link"].split("#")[0],
-            "published": formatGMTime(item["published"])
+            "published": format_gmt_time(item["published"])
         }
         for item in entries
     ]
 
-
-def fetch_blog_entries():
+def fetch_blog_entries() -> List[Dict[str, Any]]:
     entries = feedparser.parse("https://kaaaaai.cn/atom.xml")["entries"]
     return [
         {
@@ -130,20 +117,21 @@ def fetch_blog_entries():
         for entry in entries
     ]
 
+async def fetch_memos():
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
+        return response.json()
 
-def fetch_memos():
-    entries = httpx.get(
-        "https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
-    print(entries.json())
+async def main():
+    if len(sys.argv) < 2:
+        print("Please provide the input file name as an argument.")
+        sys.exit(1)
 
-
-if __name__ == "__main__":
-    inputfile = sys.argv[1]
-    readme = root.joinpath(inputfile)
-    print(readme.as_uri())
+    input_file = sys.argv[1]
+    readme = root / input_file
     project_releases = root / "releases.md"
 
-    releases = fetch_releases(GITHUB_TOKEN)
+    releases = await fetch_releases(GITHUB_TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
@@ -151,7 +139,7 @@ if __name__ == "__main__":
             for release in releases[:10]
         ]
     )
-    readme_contents = readme.open().read()
+    readme_contents = readme.read_text()
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
     doubans = fetch_douban()[:10]
@@ -166,4 +154,11 @@ if __name__ == "__main__":
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
 
-    readme.open("w").write(rewritten)
+    readme.write_text(rewritten)
+
+    # Uncomment the following line if you want to use fetch_memos
+    # memos = await fetch_memos()
+    # print(memos)
+
+if __name__ == "__main__":
+    asyncio.run(main())
