@@ -118,24 +118,38 @@ async def fetch_douban() -> List[Dict[str, Any]]:
             return []
 
 async def fetch_blog_entries() -> List[Dict[str, Any]]:
-    async with httpx.AsyncClient() as client:
-        response = await client.get("https://kaaaaai.cn/atom.xml")
-        response.raise_for_status()
-        feed = feedparser.parse(response.text)
-        return [
-            {
-                "title": entry["title"],
-                "url": entry["link"].split("#")[0],
-                "published": entry["published"].split("T")[0],
-            }
-            for entry in feed["entries"]
-        ]
+    async with httpx.AsyncClient(follow_redirects=True) as client:
+        try:
+            response = await client.get("https://kaaaaai.cn/atom.xml", timeout=10.0)
+            response.raise_for_status()
+            feed = feedparser.parse(response.text)
+            return [
+                {
+                    "title": entry["title"],
+                    "url": entry["link"].split("#")[0],
+                    "published": entry["published"].split("T")[0],
+                }
+                for entry in feed["entries"]
+            ]
+        except httpx.HTTPStatusError as e:
+            print(f"Error fetching blog entries: {e}")
+            return []
+        except Exception as e:
+            print(f"Unexpected error fetching blog entries: {e}")
+            return []
 
 async def fetch_memos():
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
-        response.raise_for_status()
-        return response.json()
+        try:
+            response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f", timeout=10.0)
+            response.raise_for_status()
+            return response.json()
+        except httpx.HTTPStatusError as e:
+            print(f"Error fetching memos: {e}")
+            return []
+        except Exception as e:
+            print(f"Unexpected error fetching memos: {e}")
+            return []
 
 async def main():
     if len(sys.argv) < 2:
@@ -166,10 +180,13 @@ async def main():
         print("Skipping Douban update due to error.")
 
     entries = await fetch_blog_entries()
-    entries_md = "\n".join(
-        ["- [{title}]({url})".format(**entry) for entry in entries[:10]]
-    )
-    rewritten = replace_chunk(rewritten, "blog", entries_md)
+    if entries:
+        entries_md = "\n".join(
+            ["- [{title}]({url})".format(**entry) for entry in entries[:10]]
+        )
+        rewritten = replace_chunk(rewritten, "blog", entries_md)
+    else:
+        print("Skipping blog entries update due to error.")
 
     readme.write_text(rewritten)
 
