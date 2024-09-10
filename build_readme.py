@@ -62,7 +62,7 @@ async def fetch_releases(oauth_token: str) -> List[Dict[str, Any]]:
     has_next_page = True
     after_cursor = None
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=30.0) as client:
         while has_next_page:
             response = await client.post(
                 GITHUB_GRAPHQL_URL,
@@ -97,9 +97,9 @@ async def fetch_douban() -> List[Dict[str, Any]]:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
-    async with httpx.AsyncClient(headers=headers) as client:
+    async with httpx.AsyncClient(headers=headers, timeout=30.0, follow_redirects=True) as client:
         try:
-            response = await client.get("https://www.douban.com/feed/people/kaaaaai/interests", timeout=10.0)
+            response = await client.get("https://www.douban.com/feed/people/kaaaaai/interests")
             response.raise_for_status()
             feed = feedparser.parse(response.text)
             return [
@@ -118,9 +118,9 @@ async def fetch_douban() -> List[Dict[str, Any]]:
             return []
 
 async def fetch_blog_entries() -> List[Dict[str, Any]]:
-    async with httpx.AsyncClient(follow_redirects=True) as client:
+    async with httpx.AsyncClient(timeout=30.0, follow_redirects=True) as client:
         try:
-            response = await client.get("https://kaaaaai.cn/atom.xml", timeout=10.0)
+            response = await client.get("https://kaaaaai.cn/atom.xml")
             response.raise_for_status()
             feed = feedparser.parse(response.text)
             return [
@@ -139,9 +139,9 @@ async def fetch_blog_entries() -> List[Dict[str, Any]]:
             return []
 
 async def fetch_memos():
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=30.0) as client:
         try:
-            response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f", timeout=10.0)
+            response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
             response.raise_for_status()
             return response.json()
         except httpx.HTTPStatusError as e:
