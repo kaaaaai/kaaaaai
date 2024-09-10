@@ -1,8 +1,6 @@
 import asyncio
-from python_graphql_client import GraphqlClient
-import feedparser
 import httpx
-import json
+import feedparser
 import pathlib
 import re
 import os
@@ -11,9 +9,8 @@ import datetime
 from typing import List, Dict, Any
 
 root = pathlib.Path(__file__).parent.resolve()
-client = GraphqlClient(endpoint="https://api.github.com/graphql")
-
 GITHUB_TOKEN = os.environ.get("PERSONAL_TOKEN", "")
+GITHUB_GRAPHQL_URL = "https://api.github.com/graphql"
 
 def replace_chunk(content: str, marker: str, chunk: str, inline: bool = False) -> str:
     r = re.compile(
@@ -68,10 +65,11 @@ async def fetch_releases(oauth_token: str) -> List[Dict[str, Any]]:
     async with httpx.AsyncClient() as client:
         while has_next_page:
             response = await client.post(
-                "https://api.github.com/graphql",
+                GITHUB_GRAPHQL_URL,
                 json={"query": make_query(after_cursor)},
                 headers={"Authorization": f"Bearer {oauth_token}"}
             )
+            response.raise_for_status()
             data = response.json()
 
             for repo in data["data"]["viewer"]["repositories"]["nodes"]:
@@ -95,31 +93,38 @@ async def fetch_releases(oauth_token: str) -> List[Dict[str, Any]]:
 
     return releases
 
-def fetch_douban() -> List[Dict[str, Any]]:
-    entries = feedparser.parse("https://www.douban.com/feed/people/kaaaaai/interests")["entries"]
-    return [
-        {
-            "title": item["title"],
-            "url": item["link"].split("#")[0],
-            "published": format_gmt_time(item["published"])
-        }
-        for item in entries
-    ]
+async def fetch_douban() -> List[Dict[str, Any]]:
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://www.douban.com/feed/people/kaaaaai/interests")
+        response.raise_for_status()
+        feed = feedparser.parse(response.text)
+        return [
+            {
+                "title": item["title"],
+                "url": item["link"].split("#")[0],
+                "published": format_gmt_time(item["published"])
+            }
+            for item in feed["entries"]
+        ]
 
-def fetch_blog_entries() -> List[Dict[str, Any]]:
-    entries = feedparser.parse("https://kaaaaai.cn/atom.xml")["entries"]
-    return [
-        {
-            "title": entry["title"],
-            "url": entry["link"].split("#")[0],
-            "published": entry["published"].split("T")[0],
-        }
-        for entry in entries
-    ]
+async def fetch_blog_entries() -> List[Dict[str, Any]]:
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://kaaaaai.cn/atom.xml")
+        response.raise_for_status()
+        feed = feedparser.parse(response.text)
+        return [
+            {
+                "title": entry["title"],
+                "url": entry["link"].split("#")[0],
+                "published": entry["published"].split("T")[0],
+            }
+            for entry in feed["entries"]
+        ]
 
 async def fetch_memos():
     async with httpx.AsyncClient() as client:
         response = await client.get("https://memos.kaaaaai.cn/api/v1/memos?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
+        response.raise_for_status()
         return response.json()
 
 async def main():
@@ -129,7 +134,6 @@ async def main():
 
     input_file = sys.argv[1]
     readme = root / input_file
-    project_releases = root / "releases.md"
 
     releases = await fetch_releases(GITHUB_TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
@@ -142,15 +146,15 @@ async def main():
     readme_contents = readme.read_text()
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
-    doubans = fetch_douban()[:10]
+    doubans = await fetch_douban()
     doubans_md = "\n".join(
-        ["- [{title}]({url}) {published}".format(**item) for item in doubans]
+        ["- [{title}]({url}) {published}".format(**item) for item in doubans[:10]]
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
-    entries = fetch_blog_entries()[:10]
+    entries = await fetch_blog_entries()
     entries_md = "\n".join(
-        ["- [{title}]({url})".format(**entry) for entry in entries]
+        ["- [{title}]({url})".format(**entry) for entry in entries[:10]]
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
 
