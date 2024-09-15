@@ -32,6 +32,9 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看门前宝地](http://movie.douban.com/subject/35613925/) 2024-09-14
+- [想看德州巴黎](http://movie.douban.com/subject/1302061/) 2024-09-14
+- [想看里斯本丸沉没](http://movie.douban.com/subject/30412658/) 2024-09-14
 - [看过初恋这首情歌](http://movie.douban.com/subject/25855071/) 2024-09-01
 - [看过狗神](http://movie.douban.com/subject/35736202/) 2024-09-01
 - [想读过渡劳动](https://book.douban.com/subject/36985251/) 2024-09-01
@@ -39,9 +42,6 @@ He is always curious and interested in technology and love.
 - [想读怪画谜案](https://book.douban.com/subject/36858240/) 2024-09-01
 - [想读我们时代的神经与精神疾病](https://book.douban.com/subject/36930293/) 2024-09-01
 - [想读他们涉海而来](https://book.douban.com/subject/36832310/) 2024-09-01
-- [想读食南之徒](https://book.douban.com/subject/36710597/) 2024-09-01
-- [想看杀手寓言 第二章](http://movie.douban.com/subject/35184151/) 2024-09-01
-- [看过首](http://movie.douban.com/subject/35359717/) 2024-09-01
 <!-- douban ends -->
 
 
