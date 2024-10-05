@@ -32,9 +32,9 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
-- [想看逃脱](http://movie.douban.com/subject/35756784/) 2024-10-01
+- [想看出逃](http://movie.douban.com/subject/35756784/) 2024-10-01
 - [想看小丑2：双重妄想](http://movie.douban.com/subject/34909341/) 2024-10-01
-- [想看胆大党](http://movie.douban.com/subject/36171155/) 2024-10-01
+- [想看超自然武装当哒当](http://movie.douban.com/subject/36171155/) 2024-10-01
 - [看过泰迪熊 第一季](http://movie.douban.com/subject/35868338/) 2024-09-30
 - [看过长安三万里](http://movie.douban.com/subject/36035676/) 2024-09-22
 - [想看门前宝地](http://movie.douban.com/subject/35613925/) 2024-09-14
