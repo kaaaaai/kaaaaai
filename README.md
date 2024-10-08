@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看逃亡](http://movie.douban.com/subject/30403645/) 2024-10-07
 - [想看荒野机器人](http://movie.douban.com/subject/36689857/) 2024-10-06
 - [想看某种物质](http://movie.douban.com/subject/35882838/) 2024-10-06
 - [想看我们最后一次做孩子](http://movie.douban.com/subject/35973112/) 2024-10-06
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过泰迪熊 第一季](http://movie.douban.com/subject/35868338/) 2024-09-30
 - [看过长安三万里](http://movie.douban.com/subject/36035676/) 2024-09-22
 - [想看门前宝地](http://movie.douban.com/subject/35613925/) 2024-09-14
-- [想看德州巴黎](http://movie.douban.com/subject/1302061/) 2024-09-14
 <!-- douban ends -->
 
 
