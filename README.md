@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想读席德·梅尔的回忆录！](https://book.douban.com/subject/36829300/) 2024-10-19
 - [读过创新公司](https://book.douban.com/subject/26314955/) 2024-10-15
 - [想看蓦然回首](http://movie.douban.com/subject/36765646/) 2024-10-15
 - [想看公主与青蛙](http://movie.douban.com/subject/1949005/) 2024-10-09
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看某种物质](http://movie.douban.com/subject/35882838/) 2024-10-06
 - [想看我们最后一次做孩子](http://movie.douban.com/subject/35973112/) 2024-10-06
 - [想看逃脱](http://movie.douban.com/subject/35756784/) 2024-10-01
-- [想看小丑2：双重妄想](http://movie.douban.com/subject/34909341/) 2024-10-01
 <!-- douban ends -->
 
 
