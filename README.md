@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过姥姥的外孙](http://movie.douban.com/subject/36328210/) 2024-10-20
+- [想看T省的84·85年](http://movie.douban.com/subject/3369426/) 2024-10-20
+- [想看老枪](http://movie.douban.com/subject/33458979/) 2024-10-20
+- [想看疯狂的小镇](http://movie.douban.com/subject/1297795/) 2024-10-20
 - [想读席德·梅尔的回忆录！](https://book.douban.com/subject/36829300/) 2024-10-19
 - [读过创新公司](https://book.douban.com/subject/26314955/) 2024-10-15
 - [想看蓦然回首](http://movie.douban.com/subject/36765646/) 2024-10-15
 - [想看公主与青蛙](http://movie.douban.com/subject/1949005/) 2024-10-09
 - [想看闪电狗](http://movie.douban.com/subject/1793912/) 2024-10-09
 - [想看逃亡](http://movie.douban.com/subject/30403645/) 2024-10-07
-- [想看荒野机器人](http://movie.douban.com/subject/36689857/) 2024-10-06
-- [想看某种物质](http://movie.douban.com/subject/35882838/) 2024-10-06
-- [想看我们最后一次做孩子](http://movie.douban.com/subject/35973112/) 2024-10-06
-- [想看逃脱](http://movie.douban.com/subject/35756784/) 2024-10-01
 <!-- douban ends -->
 
 
