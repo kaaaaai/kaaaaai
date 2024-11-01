@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过猫猫的奇幻漂流](http://movie.douban.com/subject/35603727/) 2024-11-01
 - [读过象棋的故事](https://book.douban.com/subject/36872349/) 2024-10-25
 - [想看变形金刚：起源](http://movie.douban.com/subject/34960078/) 2024-10-25
 - [想看斯图尔特：倒带人生](http://movie.douban.com/subject/2133337/) 2024-10-25
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过姥姥的外孙](http://movie.douban.com/subject/36328210/) 2024-10-20
 - [想看T省的84·85年](http://movie.douban.com/subject/3369426/) 2024-10-20
 - [想看老枪](http://movie.douban.com/subject/33458979/) 2024-10-20
-- [想看疯狂的小镇](http://movie.douban.com/subject/1297795/) 2024-10-20
 <!-- douban ends -->
 
 
