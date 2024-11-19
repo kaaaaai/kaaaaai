@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过好东西](http://movie.douban.com/subject/36154853/) 2024-11-17
 - [读过荒原狼](https://book.douban.com/subject/35894424/) 2024-11-13
 - [玩过塞尔达传说 智慧的再现 ゼルダの伝説 知恵のかりもの](http://www.douban.com/game/36932396/) 2024-11-04
 - [玩过武林求生 Karate Survivor](http://www.douban.com/game/36961754/) 2024-11-04
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看斯图尔特：倒带人生](http://movie.douban.com/subject/2133337/) 2024-10-25
 - [看过毒液：最后一舞](http://movie.douban.com/subject/35087675/) 2024-10-25
 - [想看蜘蛛侠 第一季](http://movie.douban.com/subject/26892343/) 2024-10-25
-- [读过素食者](https://book.douban.com/subject/35534519/) 2024-10-24
 <!-- douban ends -->
 
 
