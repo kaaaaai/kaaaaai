@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过你的夏天还好吗？](https://book.douban.com/subject/36109174/) 2024-11-25
 - [看过蓦然回首](http://movie.douban.com/subject/36765646/) 2024-11-23
 - [看过好东西](http://movie.douban.com/subject/36154853/) 2024-11-17
 - [读过荒原狼](https://book.douban.com/subject/35894424/) 2024-11-13
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [读过象棋的故事](https://book.douban.com/subject/36872349/) 2024-10-25
 - [想看变形金刚：起源](http://movie.douban.com/subject/34960078/) 2024-10-25
 - [想看斯图尔特：倒带人生](http://movie.douban.com/subject/2133337/) 2024-10-25
-- [看过毒液：最后一舞](http://movie.douban.com/subject/35087675/) 2024-10-25
 <!-- douban ends -->
 
 
