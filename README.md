@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想读鳄鱼手记](https://book.douban.com/subject/35512887/) 2024-12-16
+- [读过流动的盛宴](https://book.douban.com/subject/30333515/) 2024-12-16
 - [想看阿薇尔与虚构世界](http://movie.douban.com/subject/25821673/) 2024-12-04
 - [读过你的夏天还好吗？](https://book.douban.com/subject/36109174/) 2024-11-25
 - [看过蓦然回首](http://movie.douban.com/subject/36765646/) 2024-11-23
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [玩过塞尔达传说 智慧的再现 ゼルダの伝説 知恵のかりもの](http://www.douban.com/game/36932396/) 2024-11-04
 - [玩过武林求生 Karate Survivor](http://www.douban.com/game/36961754/) 2024-11-04
 - [看过猫猫的奇幻漂流](http://movie.douban.com/subject/35603727/) 2024-11-01
-- [读过象棋的故事](https://book.douban.com/subject/36872349/) 2024-10-25
-- [想看变形金刚：起源](http://movie.douban.com/subject/34960078/) 2024-10-25
 <!-- douban ends -->
 
 
