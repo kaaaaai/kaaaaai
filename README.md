@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过我在底层的生活](https://book.douban.com/subject/25900802/) 2024-12-27
 - [想看大都市的爱情法](http://movie.douban.com/subject/36171172/) 2024-12-24
 - [想看最后的里程](http://movie.douban.com/subject/36680228/) 2024-12-24
 - [想看入侵者们的晚餐](http://movie.douban.com/subject/36593404/) 2024-12-24
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看阿薇尔与虚构世界](http://movie.douban.com/subject/25821673/) 2024-12-04
 - [读过你的夏天还好吗？](https://book.douban.com/subject/36109174/) 2024-11-25
 - [看过蓦然回首](http://movie.douban.com/subject/36765646/) 2024-11-23
-- [看过好东西](http://movie.douban.com/subject/36154853/) 2024-11-17
 <!-- douban ends -->
 
 
