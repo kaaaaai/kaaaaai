@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过还有明天](http://movie.douban.com/subject/36445098/) 2025-01-19
+- [看过入侵者们的晚餐](http://movie.douban.com/subject/36593404/) 2025-01-18
+- [想看热带鱼](http://movie.douban.com/subject/1302181/) 2025-01-13
+- [想看气垫传奇](http://movie.douban.com/subject/35738421/) 2025-01-12
+- [想看豺狼的日子 第一季](http://movie.douban.com/subject/36323224/) 2025-01-12
+- [想看月球时代白日梦](http://movie.douban.com/subject/35869654/) 2025-01-08
+- [想看破·地狱](http://movie.douban.com/subject/36712987/) 2025-01-08
 - [想看火车](http://movie.douban.com/subject/5908473/) 2024-12-27
 - [想看我的解放日志](http://movie.douban.com/subject/35322421/) 2024-12-27
 - [读过我在底层的生活](https://book.douban.com/subject/25900802/) 2024-12-27
-- [想看大都市的爱情法](http://movie.douban.com/subject/36171172/) 2024-12-24
-- [想看最后的里程](http://movie.douban.com/subject/36680228/) 2024-12-24
-- [想看入侵者们的晚餐](http://movie.douban.com/subject/36593404/) 2024-12-24
-- [想看奇美拉](http://movie.douban.com/subject/35448539/) 2024-12-24
-- [想读鳄鱼手记](https://book.douban.com/subject/35512887/) 2024-12-16
-- [读过流动的盛宴](https://book.douban.com/subject/30333515/) 2024-12-16
-- [想看阿薇尔与虚构世界](http://movie.douban.com/subject/25821673/) 2024-12-04
 <!-- douban ends -->
 
 
