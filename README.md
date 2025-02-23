@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看诡才之道](http://movie.douban.com/subject/35364691/) 2025-02-22
 - [看过初步举证](http://movie.douban.com/subject/35861791/) 2025-02-16
 - [看过胶囊计划](http://movie.douban.com/subject/35679802/) 2025-02-16
 - [想看纳米比亚的沙漠](http://movie.douban.com/subject/36857198/) 2025-02-15
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [读过宇宙无事发生](https://book.douban.com/subject/36759462/) 2025-02-14
 - [读过厌女](https://book.douban.com/subject/25836270/) 2025-02-12
 - [看过鲭鱼罐头](http://movie.douban.com/subject/35700910/) 2025-02-09
-- [看过机器人之梦](http://movie.douban.com/subject/35426925/) 2025-02-09
 <!-- douban ends -->
 
 
