@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看流氓读书会](http://movie.douban.com/subject/36416346/) 2025-02-23
+- [想看战国鬼才传](http://movie.douban.com/subject/5392152/) 2025-02-23
 - [想看诡才之道](http://movie.douban.com/subject/35364691/) 2025-02-22
 - [看过初步举证](http://movie.douban.com/subject/35861791/) 2025-02-16
 - [看过胶囊计划](http://movie.douban.com/subject/35679802/) 2025-02-16
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看芝加哥黑帮纪实](http://movie.douban.com/subject/26838179/) 2025-02-14
 - [想看86 -不存在的战区-](http://movie.douban.com/subject/33392923/) 2025-02-14
 - [读过宇宙无事发生](https://book.douban.com/subject/36759462/) 2025-02-14
-- [读过厌女](https://book.douban.com/subject/25836270/) 2025-02-12
-- [看过鲭鱼罐头](http://movie.douban.com/subject/35700910/) 2025-02-09
 <!-- douban ends -->
 
 
