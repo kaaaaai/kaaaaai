@@ -32,8 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过流氓读书会](http://movie.douban.com/subject/36416346/) 2025-03-08
 - [看过诡扯](http://movie.douban.com/subject/35206186/) 2025-03-02
-- [想看流氓读书会](http://movie.douban.com/subject/36416346/) 2025-02-23
 - [想看战国鬼才传](http://movie.douban.com/subject/5392152/) 2025-02-23
 - [想看诡才之道](http://movie.douban.com/subject/35364691/) 2025-02-22
 - [看过初步举证](http://movie.douban.com/subject/35861791/) 2025-02-16
