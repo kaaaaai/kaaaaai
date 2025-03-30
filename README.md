@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看混沌少年时](https://movie.douban.com/subject/36820950/) 2025-03-30
+- [想看幸福伽菜子的快乐杀手生活](https://movie.douban.com/subject/36883141/) 2025-03-30
 - [读过转生接口](https://book.douban.com/subject/35637913/) 2025-03-26
 - [读过木心谈木心](https://book.douban.com/subject/34908062/) 2025-03-26
-- [想看命定之人](http://movie.douban.com/subject/35244291/) 2025-03-24
-- [看过流氓读书会](http://movie.douban.com/subject/36416346/) 2025-03-08
-- [看过诡扯](http://movie.douban.com/subject/35206186/) 2025-03-02
-- [想看战国鬼才传](http://movie.douban.com/subject/5392152/) 2025-02-23
-- [想看诡才之道](http://movie.douban.com/subject/35364691/) 2025-02-22
-- [看过初步举证](http://movie.douban.com/subject/35861791/) 2025-02-16
-- [看过胶囊计划](http://movie.douban.com/subject/35679802/) 2025-02-16
-- [想看纳米比亚的沙漠](http://movie.douban.com/subject/36857198/) 2025-02-15
+- [想看命定之人](https://movie.douban.com/subject/35244291/) 2025-03-24
+- [看过流氓读书会](https://movie.douban.com/subject/36416346/) 2025-03-08
+- [看过诡扯](https://movie.douban.com/subject/35206186/) 2025-03-02
+- [想看战国鬼才传](https://movie.douban.com/subject/5392152/) 2025-02-23
+- [想看诡才之道](https://movie.douban.com/subject/35364691/) 2025-02-22
+- [看过初步举证](https://movie.douban.com/subject/35861791/) 2025-02-16
 <!-- douban ends -->
 
 
