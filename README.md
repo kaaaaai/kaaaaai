@@ -33,7 +33,7 @@ He is always curious and interested in technology and love.
 
 <!-- douban starts -->
 - [看过破·地狱](https://movie.douban.com/subject/36712987/) 2025-04-06
-- [想看混沌少年时](https://movie.douban.com/subject/36820950/) 2025-03-30
+- [想看混沌少年时 第一季](https://movie.douban.com/subject/36820950/) 2025-03-30
 - [想看幸福伽菜子的快乐杀手生活](https://movie.douban.com/subject/36883141/) 2025-03-30
 - [读过转生接口](https://book.douban.com/subject/35637913/) 2025-03-26
 - [读过木心谈木心](https://book.douban.com/subject/34908062/) 2025-03-26
