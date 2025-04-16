@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看片厂风云](https://movie.douban.com/subject/36156271/) 2025-04-15
+- [看过恶缘](https://movie.douban.com/subject/36544596/) 2025-04-15
 - [看过破·地狱](https://movie.douban.com/subject/36712987/) 2025-04-06
 - [想看混沌少年时 第一季](https://movie.douban.com/subject/36820950/) 2025-03-30
 - [想看幸福伽菜子的快乐杀手生活](https://movie.douban.com/subject/36883141/) 2025-03-30
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看命定之人](https://movie.douban.com/subject/35244291/) 2025-03-24
 - [看过流氓读书会](https://movie.douban.com/subject/36416346/) 2025-03-08
 - [看过诡扯](https://movie.douban.com/subject/35206186/) 2025-03-02
-- [想看战国鬼才传](https://movie.douban.com/subject/5392152/) 2025-02-23
-- [想看诡才之道](https://movie.douban.com/subject/35364691/) 2025-02-22
 <!-- douban ends -->
 
 
