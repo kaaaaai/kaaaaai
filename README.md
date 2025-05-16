@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过鳄鱼手记](https://book.douban.com/subject/35512887/) 2025-05-16
 - [想看掩耳盗邻 第一季](https://movie.douban.com/subject/36691469/) 2025-05-07
 - [看过雷普利](https://movie.douban.com/subject/26415434/) 2025-05-04
 - [想看谜探路德维希 第一季](https://movie.douban.com/subject/36419921/) 2025-05-04
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看消消气 第一季](https://movie.douban.com/subject/1428366/) 2025-04-27
 - [想读一桩事先张扬的凶杀案](https://book.douban.com/subject/24382569/) 2025-04-20
 - [想读幽灵](https://book.douban.com/subject/27042830/) 2025-04-19
-- [想读我的天才女友](https://book.douban.com/subject/26878124/) 2025-04-19
 <!-- douban ends -->
 
 
