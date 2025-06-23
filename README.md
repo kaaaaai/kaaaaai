@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看约翰·威尔逊的十万个怎么做 第一季](https://movie.douban.com/subject/35205588/) 2025-06-22
+- [想看彩排 第一季](https://movie.douban.com/subject/35935299/) 2025-06-22
+- [想看无赦之仇](https://movie.douban.com/subject/36182183/) 2025-06-22
+- [想看瑞克和莫蒂 第八季](https://movie.douban.com/subject/36508122/) 2025-06-22
+- [想看疯狂独角兽](https://movie.douban.com/subject/37259671/) 2025-06-22
+- [看过诡才之道](https://movie.douban.com/subject/35364691/) 2025-06-22
+- [想看罪人](https://movie.douban.com/subject/36742579/) 2025-06-22
+- [想看铁血战士：杀戮之王](https://movie.douban.com/subject/37309928/) 2025-06-22
 - [想看异邦人：无皇刃谭](https://movie.douban.com/subject/2277204/) 2025-06-16
 - [想看热点](https://movie.douban.com/subject/36990427/) 2025-06-05
-- [想看冥王](https://movie.douban.com/subject/27069431/) 2025-06-05
-- [想看常见副作用 第一季](https://movie.douban.com/subject/36650558/) 2025-06-05
-- [读过每一句话语都坐着别的眼睛](https://book.douban.com/subject/36249596/) 2025-06-04
-- [看过雷霆特攻队*](https://movie.douban.com/subject/35927475/) 2025-06-03
-- [看过星际宝贝史迪奇](https://movie.douban.com/subject/30345743/) 2025-06-03
-- [想看狂野时代](https://movie.douban.com/subject/35416174/) 2025-06-02
-- [想看桃色公寓](https://movie.douban.com/subject/1394218/) 2025-05-24
-- [读过鳄鱼手记](https://book.douban.com/subject/35512887/) 2025-05-16
 <!-- douban ends -->
 
 
