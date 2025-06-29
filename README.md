@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过昨天的云](https://book.douban.com/subject/20433556/) 2025-06-28
 - [想看约翰·威尔逊的十万个怎么做 第一季](https://movie.douban.com/subject/35205588/) 2025-06-22
 - [想看彩排 第一季](https://movie.douban.com/subject/35935299/) 2025-06-22
 - [想看无赦之仇](https://movie.douban.com/subject/36182183/) 2025-06-22
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看罪人](https://movie.douban.com/subject/36742579/) 2025-06-22
 - [想看铁血战士：杀戮之王](https://movie.douban.com/subject/37309928/) 2025-06-22
 - [想看异邦人：无皇刃谭](https://movie.douban.com/subject/2277204/) 2025-06-16
-- [想看热点](https://movie.douban.com/subject/36990427/) 2025-06-05
 <!-- douban ends -->
 
 
