@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看超超超超超喜欢你的100个女朋友](https://movie.douban.com/subject/35427282/) 2025-07-04
 - [想看吊带袜天使](https://movie.douban.com/subject/4845425/) 2025-07-01
 - [想看小城日常](https://movie.douban.com/subject/37054059/) 2025-07-01
 - [读过昨天的云](https://book.douban.com/subject/20433556/) 2025-06-28
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看瑞克和莫蒂 第八季](https://movie.douban.com/subject/36508122/) 2025-06-22
 - [想看疯狂独角兽](https://movie.douban.com/subject/37259671/) 2025-06-22
 - [看过诡才之道](https://movie.douban.com/subject/35364691/) 2025-06-22
-- [想看罪人](https://movie.douban.com/subject/36742579/) 2025-06-22
 <!-- douban ends -->
 
 
