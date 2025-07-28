@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看罗小黑战记](https://movie.douban.com/subject/26709258/) 2025-07-27
+- [想看罗小黑战记2](https://movie.douban.com/subject/36448279/) 2025-07-27
+- [看过关于约会的一切](https://movie.douban.com/subject/37067150/) 2025-07-27
 - [读过笑傲江湖（全四册）](https://book.douban.com/subject/1002299/) 2025-07-24
 - [想看即兴卧底](https://movie.douban.com/subject/36764327/) 2025-07-15
-- [想看关于约会的一切](https://movie.douban.com/subject/37067150/) 2025-07-15
 - [想看超超超超超喜欢你的100个女朋友](https://movie.douban.com/subject/35427282/) 2025-07-04
 - [想看吊带袜天使](https://movie.douban.com/subject/4845425/) 2025-07-01
 - [想看小城日常](https://movie.douban.com/subject/37054059/) 2025-07-01
 - [读过昨天的云](https://book.douban.com/subject/20433556/) 2025-06-28
 - [想看约翰·威尔逊的十万个怎么做 第一季](https://movie.douban.com/subject/35205588/) 2025-06-22
-- [想看彩排 第一季](https://movie.douban.com/subject/35935299/) 2025-06-22
-- [想看无赦之仇](https://movie.douban.com/subject/36182183/) 2025-06-22
 <!-- douban ends -->
 
 
