@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看查克的一生](https://movie.douban.com/subject/36399569/) 2025-09-02
+- [看过骡子](https://movie.douban.com/subject/30135113/) 2025-08-31
 - [读过道士下山](https://book.douban.com/subject/2284204/) 2025-08-30
 - [想看戏台](https://movie.douban.com/subject/35483395/) 2025-08-10
 - [想看初吻](https://movie.douban.com/subject/36894170/) 2025-08-10
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看罗小黑战记](https://movie.douban.com/subject/26709258/) 2025-07-27
 - [想看罗小黑战记2](https://movie.douban.com/subject/36448279/) 2025-07-27
 - [看过关于约会的一切](https://movie.douban.com/subject/37067150/) 2025-07-27
-- [读过笑傲江湖（全四册）](https://book.douban.com/subject/1002299/) 2025-07-24
-- [想看即兴卧底](https://movie.douban.com/subject/36764327/) 2025-07-15
 <!-- douban ends -->
 
 
