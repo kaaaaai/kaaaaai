@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过浪浪人生](https://movie.douban.com/subject/36207392/) 2025-10-06
 - [想看忍者蝙蝠侠大战极道联盟](https://movie.douban.com/subject/36912440/) 2025-09-27
 - [想看在长椅上 剧场版](https://movie.douban.com/subject/37037753/) 2025-09-27
 - [想看F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-09-27
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [读过道士下山](https://book.douban.com/subject/2284204/) 2025-08-30
 - [想看戏台](https://movie.douban.com/subject/35483395/) 2025-08-10
 - [想看初吻](https://movie.douban.com/subject/36894170/) 2025-08-10
-- [看过浪浪山小妖怪](https://movie.douban.com/subject/36438475/) 2025-08-10
 <!-- douban ends -->
 
 
