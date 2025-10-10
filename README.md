@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想读血孩子](https://book.douban.com/subject/36985532/) 2025-10-09
+- [想读仁慈的关系](https://book.douban.com/subject/36409330/) 2025-10-09
+- [想读反抗的忧郁](https://book.douban.com/subject/36363533/) 2025-10-09
+- [想读撒旦探戈](https://book.douban.com/subject/26394865/) 2025-10-09
 - [看过浪浪人生](https://movie.douban.com/subject/36207392/) 2025-10-06
 - [想看忍者蝙蝠侠大战极道联盟](https://movie.douban.com/subject/36912440/) 2025-09-27
 - [想看在长椅上 剧场版](https://movie.douban.com/subject/37037753/) 2025-09-27
 - [想看F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-09-27
 - [想看汉斯·季默与朋友们：沙漠之钻](https://movie.douban.com/subject/37234302/) 2025-09-20
 - [想看查克的一生](https://movie.douban.com/subject/36399569/) 2025-09-02
-- [看过骡子](https://movie.douban.com/subject/30135113/) 2025-08-31
-- [读过道士下山](https://book.douban.com/subject/2284204/) 2025-08-30
-- [想看戏台](https://movie.douban.com/subject/35483395/) 2025-08-10
-- [想看初吻](https://movie.douban.com/subject/36894170/) 2025-08-10
 <!-- douban ends -->
 
 
