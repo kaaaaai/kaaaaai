@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过罗小黑战记2](https://movie.douban.com/subject/36448279/) 2025-10-26
+- [看过罗小黑战记](https://movie.douban.com/subject/26709258/) 2025-10-26
 - [想看一战再战](https://movie.douban.com/subject/36176155/) 2025-10-21
 - [读过埃隆·马斯克传](https://book.douban.com/subject/36518892/) 2025-10-16
 - [读过青蛇](https://book.douban.com/subject/1261153/) 2025-10-11
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想读反抗的忧郁](https://book.douban.com/subject/36363533/) 2025-10-09
 - [想读撒旦探戈](https://book.douban.com/subject/26394865/) 2025-10-09
 - [看过浪浪人生](https://movie.douban.com/subject/36207392/) 2025-10-06
-- [想看忍者蝙蝠侠大战极道联盟](https://movie.douban.com/subject/36912440/) 2025-09-27
-- [想看在长椅上 剧场版](https://movie.douban.com/subject/37037753/) 2025-09-27
 <!-- douban ends -->
 
 
