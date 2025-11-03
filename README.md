@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想读女神、娼妓、妻子与女奴](https://book.douban.com/subject/37403759/) 2025-11-02
+- [想读投喂AI](https://book.douban.com/subject/37658354/) 2025-11-02
 - [读过运气的诱饵](https://book.douban.com/subject/35662675/) 2025-10-29
 - [看过罗小黑战记2](https://movie.douban.com/subject/36448279/) 2025-10-26
 - [看过罗小黑战记](https://movie.douban.com/subject/26709258/) 2025-10-26
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [读过青蛇](https://book.douban.com/subject/1261153/) 2025-10-11
 - [想读血孩子](https://book.douban.com/subject/36985532/) 2025-10-09
 - [想读仁慈的关系](https://book.douban.com/subject/36409330/) 2025-10-09
-- [想读反抗的忧郁](https://book.douban.com/subject/36363533/) 2025-10-09
-- [想读撒旦探戈](https://book.douban.com/subject/26394865/) 2025-10-09
 <!-- douban ends -->
 
 
