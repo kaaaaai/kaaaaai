@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过我本芬芳](https://book.douban.com/subject/35695541/) 2025-12-04
 - [看过F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-11-23
 - [想看初吻](https://movie.douban.com/subject/1340517/) 2025-11-16
 - [想看一点点超能力](https://movie.douban.com/subject/37484739/) 2025-11-15
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想读女神、娼妓、妻子与女奴](https://book.douban.com/subject/37403759/) 2025-11-02
 - [想读投喂AI](https://book.douban.com/subject/37658354/) 2025-11-02
 - [读过运气的诱饵](https://book.douban.com/subject/35662675/) 2025-10-29
-- [看过罗小黑战记2](https://movie.douban.com/subject/36448279/) 2025-10-26
 <!-- douban ends -->
 
 
