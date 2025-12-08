@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看你好，爱美丽](https://movie.douban.com/subject/36394612/) 2025-12-07
+- [看过常见副作用 第一季](https://movie.douban.com/subject/36650558/) 2025-12-07
+- [看过疯狂动物城2](https://movie.douban.com/subject/26817136/) 2025-12-07
+- [看过阿诺拉](https://movie.douban.com/subject/36195543/) 2025-12-06
+- [看过捕风追影](https://movie.douban.com/subject/36600459/) 2025-12-06
 - [读过我本芬芳](https://book.douban.com/subject/35695541/) 2025-12-04
 - [看过F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-11-23
 - [想看初吻](https://movie.douban.com/subject/1340517/) 2025-11-16
 - [想看一点点超能力](https://movie.douban.com/subject/37484739/) 2025-11-15
 - [想看小丑回魂：欢迎来到德里镇 第一季](https://movie.douban.com/subject/35819117/) 2025-11-15
-- [想看台风商社](https://movie.douban.com/subject/37019290/) 2025-11-09
-- [读过手机](https://book.douban.com/subject/1038861/) 2025-11-05
-- [想读女神、娼妓、妻子与女奴](https://book.douban.com/subject/37403759/) 2025-11-02
-- [想读投喂AI](https://book.douban.com/subject/37658354/) 2025-11-02
-- [读过运气的诱饵](https://book.douban.com/subject/35662675/) 2025-10-29
 <!-- douban ends -->
 
 
