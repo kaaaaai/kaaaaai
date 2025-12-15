@@ -32,7 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
-- [想看你好，爱美丽](https://movie.douban.com/subject/36394612/) 2025-12-07
+- [看过你好，爱美丽](https://movie.douban.com/subject/36394612/) 2025-12-14
 - [看过常见副作用 第一季](https://movie.douban.com/subject/36650558/) 2025-12-07
 - [看过疯狂动物城2](https://movie.douban.com/subject/26817136/) 2025-12-07
 - [看过阿诺拉](https://movie.douban.com/subject/36195543/) 2025-12-06
