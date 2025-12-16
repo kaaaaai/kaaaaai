@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过制造消费者](https://book.douban.com/subject/35921760/) 2025-12-16
 - [看过你好，爱美丽](https://movie.douban.com/subject/36394612/) 2025-12-14
 - [看过常见副作用 第一季](https://movie.douban.com/subject/36650558/) 2025-12-07
 - [看过疯狂动物城2](https://movie.douban.com/subject/26817136/) 2025-12-07
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-11-23
 - [想看初吻](https://movie.douban.com/subject/1340517/) 2025-11-16
 - [想看一点点超能力](https://movie.douban.com/subject/37484739/) 2025-11-15
-- [想看小丑回魂：欢迎来到德里镇 第一季](https://movie.douban.com/subject/35819117/) 2025-11-15
 <!-- douban ends -->
 
 
