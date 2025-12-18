@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
-- [读过我的天才女友](https://book.douban.com/subject/26878124/) 2025-12-16
-- [读过制造消费者](https://book.douban.com/subject/35921760/) 2025-12-16
-- [看过你好，爱美丽](https://movie.douban.com/subject/36394612/) 2025-12-14
-- [看过常见副作用 第一季](https://movie.douban.com/subject/36650558/) 2025-12-07
-- [看过疯狂动物城2](https://movie.douban.com/subject/26817136/) 2025-12-07
-- [看过阿诺拉](https://movie.douban.com/subject/36195543/) 2025-12-06
-- [看过捕风追影](https://movie.douban.com/subject/36600459/) 2025-12-06
-- [读过我本芬芳](https://book.douban.com/subject/35695541/) 2025-12-04
-- [看过F1：狂飙飞车](https://movie.douban.com/subject/35689244/) 2025-11-23
-- [想看初吻](https://movie.douban.com/subject/1340517/) 2025-11-16
+- [想看蜗牛回忆录](https://movie.douban.com/subject/36467821/) 2025-12-17
+- [看过荒野机器人](https://movie.douban.com/subject/36689857/) 2025-12-17
+- [想看头脑特工队2](https://movie.douban.com/subject/36090457/) 2025-12-17
+- [想看出走的决心](https://movie.douban.com/subject/36587974/) 2025-12-17
+- [想看太空见习生](https://movie.douban.com/subject/35633079/) 2025-12-17
+- [想看哆啦A梦：大雄的绘画奇遇记](https://movie.douban.com/subject/36809928/) 2025-12-17
+- [想看是的](https://movie.douban.com/subject/36206660/) 2025-12-17
+- [想看新·驯龙高手](https://movie.douban.com/subject/36247731/) 2025-12-17
+- [想看百米。](https://movie.douban.com/subject/36907263/) 2025-12-17
+- [想看寂静的朋友](https://movie.douban.com/subject/26967871/) 2025-12-17
 <!-- douban ends -->
 
 
