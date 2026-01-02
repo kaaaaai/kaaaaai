@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
-- [想看蜗牛回忆录](https://movie.douban.com/subject/36467821/) 2025-12-17
+- [看过大兵小将](https://movie.douban.com/subject/3279107/) 2026-01-01
+- [看过功夫之王](https://movie.douban.com/subject/1939414/) 2026-01-01
+- [看过神话](https://movie.douban.com/subject/1307023/) 2026-01-01
+- [看过蜗牛回忆录](https://movie.douban.com/subject/36467821/) 2026-01-01
 - [看过荒野机器人](https://movie.douban.com/subject/36689857/) 2025-12-17
 - [想看头脑特工队2](https://movie.douban.com/subject/36090457/) 2025-12-17
 - [想看出走的决心](https://movie.douban.com/subject/36587974/) 2025-12-17
 - [想看太空见习生](https://movie.douban.com/subject/35633079/) 2025-12-17
 - [想看哆啦A梦：大雄的绘画奇遇记](https://movie.douban.com/subject/36809928/) 2025-12-17
 - [想看是的](https://movie.douban.com/subject/36206660/) 2025-12-17
-- [想看新·驯龙高手](https://movie.douban.com/subject/36247731/) 2025-12-17
-- [想看百米。](https://movie.douban.com/subject/36907263/) 2025-12-17
-- [想看寂静的朋友](https://movie.douban.com/subject/26967871/) 2025-12-17
 <!-- douban ends -->
 
 
