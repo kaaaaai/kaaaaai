@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过暗金丑岛君](https://movie.douban.com/subject/6772974/) 2026-01-25
+- [想看爱上平行时空的你](https://movie.douban.com/subject/37312482/) 2026-01-25
+- [想看亨利·休格和其他三人的神奇故事](https://movie.douban.com/subject/36877400/) 2026-01-25
+- [想看真心半解](https://movie.douban.com/subject/33420285/) 2026-01-25
+- [看过黑豹](https://movie.douban.com/subject/6390825/) 2026-01-25
+- [看过美国队长2](https://movie.douban.com/subject/6390823/) 2026-01-25
 - [看过花束般的恋爱](https://movie.douban.com/subject/34874432/) 2026-01-23
 - [想读大败局](https://book.douban.com/subject/1072438/) 2026-01-04
 - [想读激荡三十年（上）](https://book.douban.com/subject/1970428/) 2026-01-04
 - [想读棉花帝国](https://book.douban.com/subject/30411849/) 2026-01-04
-- [想读城市发展史](https://book.douban.com/subject/1444252/) 2026-01-04
-- [想读亚洲大趋势](https://book.douban.com/subject/25893995/) 2026-01-04
-- [看过大兵小将](https://movie.douban.com/subject/3279107/) 2026-01-01
-- [看过功夫之王](https://movie.douban.com/subject/1939414/) 2026-01-01
-- [看过神话](https://movie.douban.com/subject/1307023/) 2026-01-01
-- [看过蜗牛回忆录](https://movie.douban.com/subject/36467821/) 2026-01-01
 <!-- douban ends -->
 
 
