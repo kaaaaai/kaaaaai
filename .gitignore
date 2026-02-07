@@ -48,3 +48,6 @@ Thumbs.db*
 
 
 .env
+
+# local temporary venv for dependency verification
+.venv_secfix/
