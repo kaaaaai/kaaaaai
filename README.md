@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过哈姆奈特](https://movie.douban.com/subject/35618471/) 2026-02-07
 - [想看三分之一](https://movie.douban.com/subject/21339392/) 2026-02-01
 - [想看真幌站前多田便利屋](https://movie.douban.com/subject/4903614/) 2026-02-01
 - [看过暗金丑岛君3](https://movie.douban.com/subject/26788943/) 2026-02-01
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看爱上平行时空的你](https://movie.douban.com/subject/37312482/) 2026-01-25
 - [想看亨利·休格和其他三人的神奇故事](https://movie.douban.com/subject/36877400/) 2026-01-25
 - [想看真心半解](https://movie.douban.com/subject/33420285/) 2026-01-25
-- [看过黑豹](https://movie.douban.com/subject/6390825/) 2026-01-25
 <!-- douban ends -->
 
 
