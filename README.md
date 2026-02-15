@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过铁血战士：杀戮之地](https://movie.douban.com/subject/36707378/) 2026-02-15
 - [看过超时空辉夜姬！](https://movie.douban.com/subject/37825206/) 2026-02-08
 - [看过倭寇的踪迹](https://movie.douban.com/subject/6425116/) 2026-02-08
 - [看过东北警察故事](https://movie.douban.com/subject/35611465/) 2026-02-08
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [想看真幌站前多田便利屋](https://movie.douban.com/subject/4903614/) 2026-02-01
 - [看过暗金丑岛君3](https://movie.douban.com/subject/26788943/) 2026-02-01
 - [看过暗金丑岛君2](https://movie.douban.com/subject/25777594/) 2026-02-01
-- [想看菜鸟老警 第一季](https://movie.douban.com/subject/27185649/) 2026-01-30
 <!-- douban ends -->
 
 
