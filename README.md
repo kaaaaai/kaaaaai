@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看动物狂想曲 第一季](https://movie.douban.com/subject/30458442/) 2026-03-15
 - [看过极限审判](https://movie.douban.com/subject/36749573/) 2026-03-01
 - [看过东北警察故事3](https://movie.douban.com/subject/36977669/) 2026-03-01
 - [读过置身事内](https://book.douban.com/subject/35546622/) 2026-03-01
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过东北警察故事](https://movie.douban.com/subject/35611465/) 2026-02-08
 - [看过东北警察故事2](https://movie.douban.com/subject/35813934/) 2026-02-08
 - [看过哈姆奈特](https://movie.douban.com/subject/35618471/) 2026-02-07
-- [想看三分之一](https://movie.douban.com/subject/21339392/) 2026-02-01
 <!-- douban ends -->
 
 
