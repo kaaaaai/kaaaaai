@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过爱上平行时空的你](https://movie.douban.com/subject/37312482/) 2026-04-04
+- [想看总统的蛋糕](https://movie.douban.com/subject/36486147/) 2026-04-04
+- [看过河狸变身计划](https://movie.douban.com/subject/36999793/) 2026-04-04
+- [想看137号案件](https://movie.douban.com/subject/37144851/) 2026-04-04
+- [想看白天是阿波罗，晚上是雅典娜](https://movie.douban.com/subject/35400515/) 2026-04-04
+- [想看密探](https://movie.douban.com/subject/36697078/) 2026-04-04
 - [看过东京出租车](https://movie.douban.com/subject/37213104/) 2026-03-22
 - [看过那个人消失了](https://movie.douban.com/subject/36901661/) 2026-03-21
 - [看过美国行动](https://movie.douban.com/subject/26304310/) 2026-03-21
 - [想看动物狂想曲 第一季](https://movie.douban.com/subject/30458442/) 2026-03-15
-- [看过极限审判](https://movie.douban.com/subject/36749573/) 2026-03-01
-- [看过东北警察故事3](https://movie.douban.com/subject/36977669/) 2026-03-01
-- [读过置身事内](https://book.douban.com/subject/35546622/) 2026-03-01
-- [看过铁血战士：杀戮之地](https://movie.douban.com/subject/36707378/) 2026-02-15
-- [看过超时空辉夜姬！](https://movie.douban.com/subject/37825206/) 2026-02-08
-- [看过倭寇的踪迹](https://movie.douban.com/subject/6425116/) 2026-02-08
 <!-- douban ends -->
 
 
