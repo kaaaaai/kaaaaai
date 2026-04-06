@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过杜撰集](https://book.douban.com/subject/25796061/) 2026-04-06
+- [看过戏台](https://movie.douban.com/subject/35483395/) 2026-04-06
 - [看过爱上平行时空的你](https://movie.douban.com/subject/37312482/) 2026-04-04
 - [想看总统的蛋糕](https://movie.douban.com/subject/36486147/) 2026-04-04
 - [看过河狸变身计划](https://movie.douban.com/subject/36999793/) 2026-04-04
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看密探](https://movie.douban.com/subject/36697078/) 2026-04-04
 - [看过东京出租车](https://movie.douban.com/subject/37213104/) 2026-03-22
 - [看过那个人消失了](https://movie.douban.com/subject/36901661/) 2026-03-21
-- [看过美国行动](https://movie.douban.com/subject/26304310/) 2026-03-21
-- [想看动物狂想曲 第一季](https://movie.douban.com/subject/30458442/) 2026-03-15
 <!-- douban ends -->
 
 
