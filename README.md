@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过里斯本丸沉没](https://movie.douban.com/subject/30412658/) 2026-04-19
 - [看过约翰·威尔逊的十万个怎么做 第一季](https://movie.douban.com/subject/35205588/) 2026-04-10
 - [想看重写](https://movie.douban.com/subject/36989716/) 2026-04-06
 - [读过杜撰集](https://book.douban.com/subject/25796061/) 2026-04-06
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过河狸变身计划](https://movie.douban.com/subject/36999793/) 2026-04-04
 - [想看137号案件](https://movie.douban.com/subject/37144851/) 2026-04-04
 - [想看白天是阿波罗，晚上是雅典娜](https://movie.douban.com/subject/35400515/) 2026-04-04
-- [想看密探](https://movie.douban.com/subject/36697078/) 2026-04-04
 <!-- douban ends -->
 
 
