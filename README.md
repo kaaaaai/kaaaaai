@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过阿薇尔与虚构世界](https://movie.douban.com/subject/25821673/) 2026-05-05
+- [看过门前宝地](https://movie.douban.com/subject/35613925/) 2026-05-05
+- [看过大都市的爱情法](https://movie.douban.com/subject/36171172/) 2026-05-05
+- [看过放大](https://movie.douban.com/subject/1310176/) 2026-05-05
 - [看过即兴卧底](https://movie.douban.com/subject/36764327/) 2026-05-04
 - [看过较量](https://movie.douban.com/subject/25823663/) 2026-05-04
 - [看过忍者蝙蝠侠大战极道联盟](https://movie.douban.com/subject/36912440/) 2026-05-04
 - [看过挽救计划](https://movie.douban.com/subject/35010610/) 2026-05-04
 - [看过铁血战士：杀戮之王](https://movie.douban.com/subject/37309928/) 2026-04-26
 - [看过初吻](https://movie.douban.com/subject/36894170/) 2026-04-26
-- [看过里斯本丸沉没](https://movie.douban.com/subject/30412658/) 2026-04-19
-- [看过约翰·威尔逊的十万个怎么做 第一季](https://movie.douban.com/subject/35205588/) 2026-04-10
-- [想看重写](https://movie.douban.com/subject/36989716/) 2026-04-06
-- [读过杜撰集](https://book.douban.com/subject/25796061/) 2026-04-06
 <!-- douban ends -->
 
 
