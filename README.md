@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过死者田园祭](https://movie.douban.com/subject/1366165/) 2026-05-09
+- [想看曼哈顿](https://movie.douban.com/subject/1294300/) 2026-05-09
 - [看过阿薇尔与虚构世界](https://movie.douban.com/subject/25821673/) 2026-05-05
 - [看过门前宝地](https://movie.douban.com/subject/35613925/) 2026-05-05
 - [看过大都市的爱情法](https://movie.douban.com/subject/36171172/) 2026-05-05
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [看过较量](https://movie.douban.com/subject/25823663/) 2026-05-04
 - [看过忍者蝙蝠侠大战极道联盟](https://movie.douban.com/subject/36912440/) 2026-05-04
 - [看过挽救计划](https://movie.douban.com/subject/35010610/) 2026-05-04
-- [看过铁血战士：杀戮之王](https://movie.douban.com/subject/37309928/) 2026-04-26
-- [看过初吻](https://movie.douban.com/subject/36894170/) 2026-04-26
 <!-- douban ends -->
 
 
