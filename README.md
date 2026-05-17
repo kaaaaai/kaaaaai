@@ -32,16 +32,16 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过乱象丛生](https://book.douban.com/subject/20414497/) 2026-05-17
+- [想看大亨游戏](https://movie.douban.com/subject/1303278/) 2026-05-16
+- [想看兄弟出头天](https://movie.douban.com/subject/3578920/) 2026-05-16
+- [想看惊曝内幕](https://movie.douban.com/subject/1292660/) 2026-05-16
+- [想看死亡医生](https://movie.douban.com/subject/3074482/) 2026-05-16
+- [想看失眠症](https://movie.douban.com/subject/1307210/) 2026-05-16
 - [看过里夫金的电影节](https://movie.douban.com/subject/30353869/) 2026-05-16
 - [看过模仿游戏](https://movie.douban.com/subject/10463953/) 2026-05-16
 - [看过给阿嬷的情书](https://movie.douban.com/subject/37116446/) 2026-05-10
 - [看过死者田园祭](https://movie.douban.com/subject/1366165/) 2026-05-09
-- [想看曼哈顿](https://movie.douban.com/subject/1294300/) 2026-05-09
-- [看过阿薇尔与虚构世界](https://movie.douban.com/subject/25821673/) 2026-05-05
-- [看过门前宝地](https://movie.douban.com/subject/35613925/) 2026-05-05
-- [看过大都市的爱情法](https://movie.douban.com/subject/36171172/) 2026-05-05
-- [看过放大](https://movie.douban.com/subject/1310176/) 2026-05-05
-- [看过即兴卧底](https://movie.douban.com/subject/36764327/) 2026-05-04
 <!-- douban ends -->
 
 
