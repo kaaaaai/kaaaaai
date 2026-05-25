@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过啊，荒野 前篇](https://movie.douban.com/subject/26842503/) 2026-05-24
+- [看过纵横四海](https://movie.douban.com/subject/1295409/) 2026-05-24
 - [看过异邦人：无皇刃谭](https://movie.douban.com/subject/2277204/) 2026-05-23
 - [想看寡妇湾](https://movie.douban.com/subject/37032135/) 2026-05-20
 - [读过乱象丛生](https://book.douban.com/subject/20414497/) 2026-05-17
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想看惊曝内幕](https://movie.douban.com/subject/1292660/) 2026-05-16
 - [想看死亡医生](https://movie.douban.com/subject/3074482/) 2026-05-16
 - [想看失眠症](https://movie.douban.com/subject/1307210/) 2026-05-16
-- [看过里夫金的电影节](https://movie.douban.com/subject/30353869/) 2026-05-16
-- [看过模仿游戏](https://movie.douban.com/subject/10463953/) 2026-05-16
 <!-- douban ends -->
 
 
