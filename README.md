@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [读过上升的一切必将汇合](https://book.douban.com/subject/37074777/) 2026-05-27
 - [读过恶棍列传](https://book.douban.com/subject/25796066/) 2026-05-26
 - [读过中央公园西路](https://book.douban.com/subject/4732188/) 2026-05-26
 - [看过啊，荒野 前篇](https://movie.douban.com/subject/26842503/) 2026-05-24
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [读过乱象丛生](https://book.douban.com/subject/20414497/) 2026-05-17
 - [想看大亨游戏](https://movie.douban.com/subject/1303278/) 2026-05-16
 - [想看兄弟出头天](https://movie.douban.com/subject/3578920/) 2026-05-16
-- [想看惊曝内幕](https://movie.douban.com/subject/1292660/) 2026-05-16
 <!-- douban ends -->
 
 
