@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看躲在超市后门抽烟的两人](https://movie.douban.com/subject/37441858/) 2026-07-05
+- [想看我住在凡尔赛的日子](https://movie.douban.com/subject/37381022/) 2026-07-05
 - [读过挽救计划](https://book.douban.com/subject/35494160/) 2026-07-02
 - [读过台北人](https://book.douban.com/subject/26253699/) 2026-06-29
 - [读过在西瓜糖里](https://book.douban.com/subject/35314181/) 2026-06-26
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [想读情为何物](https://book.douban.com/subject/37292083/) 2026-06-10
 - [读过父亲的解放日志](https://book.douban.com/subject/37200304/) 2026-06-06
 - [想看正午](https://movie.douban.com/subject/1298521/) 2026-06-06
-- [想看东京物语](https://movie.douban.com/subject/1291568/) 2026-06-06
-- [读过国术馆](https://book.douban.com/subject/35370403/) 2026-05-31
 <!-- douban ends -->
 
 
