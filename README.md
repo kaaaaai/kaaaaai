@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看雷神2：黑暗世界](https://movie.douban.com/subject/6560058/) 2026-08-08
+- [看过蜘蛛侠：崭新之日](https://movie.douban.com/subject/36246195/) 2026-08-08
 - [读过大日坛城 (重写版)](https://book.douban.com/subject/35789343/) 2026-08-02
 - [想看无界之环](https://movie.douban.com/subject/37234857/) 2026-07-25
 - [看过大濛](https://movie.douban.com/subject/36680492/) 2026-07-25
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [看过痴迷](https://movie.douban.com/subject/37450627/) 2026-07-19
 - [想看躲在超市后门抽烟的两人](https://movie.douban.com/subject/37441858/) 2026-07-05
 - [想看我住在凡尔赛的日子](https://movie.douban.com/subject/37381022/) 2026-07-05
-- [读过挽救计划](https://book.douban.com/subject/35494160/) 2026-07-02
-- [读过台北人](https://book.douban.com/subject/26253699/) 2026-06-29
 <!-- douban ends -->
 
 
