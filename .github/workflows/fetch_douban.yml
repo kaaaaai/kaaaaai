@@ -7,29 +7,36 @@ on:
 env:
   TZ: Asia/Shanghai
 
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-repository-writes
+  queue: max
+
 jobs:
   douban:
     name: Douban mark data sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: movie
-        uses: lizheming/doumark-action@master
+        uses: lizheming/doumark-action@b10baabac45771af497f1cf34d878fb3f952f9ff
         with:
           id: kaaaaai
           type: movie
           format: csv
           dir: ./data
       - name: music
-        uses: lizheming/doumark-action@master
+        uses: lizheming/doumark-action@b10baabac45771af497f1cf34d878fb3f952f9ff
         with:
           id: kaaaaai
           type: music
           format: csv
           dir: ./data
       - name: book
-        uses: lizheming/doumark-action@master
+        uses: lizheming/doumark-action@b10baabac45771af497f1cf34d878fb3f952f9ff
         with:
           id: kaaaaai
           type: book
@@ -37,10 +44,10 @@ jobs:
           dir: ./data
       - name: Commit and push if changed
         run: |-
-          git pull
-          git diff
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add -A
-          git commit -m "ci: sync douban mark data" || exit 0
+          git add data/book.csv data/movie.csv data/music.csv
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "ci: sync douban mark data"
+          git pull --rebase
           git push

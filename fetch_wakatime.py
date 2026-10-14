@@ -1,3 +1,4 @@
+import base64
 import csv
 import json
 import os
@@ -11,10 +12,6 @@ load_dotenv(verbose=True)
 
 wakatime_token = os.environ.get("WAKATIME_TOKEN", "")
 memos_token = os.environ.get("MEMOS_TOKEN", "")
-
-print(wakatime_token)
-print(memos_token)
-
 
 def save_history():
     # 读取 JSON 文件
@@ -32,12 +29,19 @@ def save_history():
 
 
 def save_yesterday():
+    if not wakatime_token:
+        raise RuntimeError("WAKATIME_TOKEN is missing")
+
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)
 
-    url = f'https://wakatime.com/api/v1/users/current/summaries?api_key={wakatime_token}&start={yesterday}&end={yesterday}'
-
-    response = requests.get(url)
+    url = 'https://wakatime.com/api/v1/users/current/summaries'
+    auth = base64.b64encode(wakatime_token.encode()).decode()
+    response = requests.get(
+        url,
+        params={'start': yesterday, 'end': yesterday},
+        headers={'Authorization': f'Basic {auth}'},
+    )
 
     if response.status_code == 200:
         result = json.loads(response.text)
@@ -51,7 +55,7 @@ def save_yesterday():
             day, '%Y-%m-%dT%H:%M:%SZ') + timedelta(hours=8)
         normal_date = date.strftime('%Y-%m-%d')
 
-        if cost > 0:
+        if cost > 0 and memos_token:
             china_date_str = date.strftime('%Y年%m月%d日')
             memos_data = {
                 "content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}

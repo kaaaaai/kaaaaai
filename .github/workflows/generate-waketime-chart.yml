@@ -5,13 +5,19 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-repository-writes
+  queue: max
+
 jobs:
   update-charts:
     name: Update wakatime stats charts
     runs-on: ubuntu-latest
     steps:
-      - uses: tw93/wakatime-charts@master
+      - uses: tw93/wakatime-charts@573ed3cf0b003550e1601f76819989ece4f48fec
         with:
           BRANCH_NAME: master
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # only required if using the action in repository other than profile
