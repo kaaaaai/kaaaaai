@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update-charts:
     name: Update wakatime stats charts
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: tw93/wakatime-charts@573ed3cf0b003550e1601f76819989ece4f48fec
         with:
