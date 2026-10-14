@@ -48,6 +48,8 @@ Thumbs.db*
 
 
 .env
+__pycache__/
+*.pyc
 
 # local temporary venv for dependency verification
 .venv_secfix/

@@ -8,29 +8,35 @@ on:
 env:
   TZ: Asia/Shanghai
 
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-repository-writes
+  queue: max
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0 
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.9'
           cache: 'pip'
+          cache-dependency-path: '**/requirements*.txt'
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r requirements-readme.txt
 
       - name: Run Python script
-        env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: python build_readme.py README.md
 
       - name: Commit and push if changed
@@ -38,4 +44,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "ci: update README [skip ci]" && git push)
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "ci: update README [skip ci]"
+          git pull --rebase
+          git push
