@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过杯雪·一战成名](https://movie.douban.com/subject/37516455/) 2026-11-01
 - [看过东京少女](https://movie.douban.com/subject/2330733/) 2026-10-04
 - [看过绿灯军团](https://movie.douban.com/subject/36225837/) 2026-09-28
 - [看过年少日记](https://movie.douban.com/subject/34940879/) 2026-09-12
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过夜王](https://movie.douban.com/subject/37375594/) 2026-09-05
 - [想看一个部门的诞生](https://movie.douban.com/subject/36937765/) 2026-08-30
 - [看过火遮眼](https://movie.douban.com/subject/36877245/) 2026-08-17
-- [看过欢迎来龙餐馆](https://movie.douban.com/subject/35811064/) 2026-08-16
 <!-- douban ends -->
 
 
