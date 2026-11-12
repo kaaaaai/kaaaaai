@@ -1,0 +1,35 @@
+name: Backfill Douban completed marks
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-repository-writes
+  queue: max
+
+jobs:
+  backfill:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Test backfill
+        run: python3 -m unittest discover -s test -p test_douban_backfill.py -v
+
+      - name: Backfill at most one older mark per category
+        run: python3 scripts/backfill_douban.py
+
+      - name: Publish updated CSV only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/book.csv data/movie.csv data/music.csv
+          git diff --cached --quiet && exit 0
+          git commit -m 'ci: backfill older douban marks'
+          git pull --rebase
+          git push
