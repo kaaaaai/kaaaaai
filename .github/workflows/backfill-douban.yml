@@ -21,7 +21,9 @@ jobs:
       - name: Test backfill
         run: python3 -m unittest discover -s test -p test_douban_backfill.py -v
 
-      - name: Backfill at most one missing mark per category
+      - name: Backfill at most three missing marks per category
+        env:
+          BACKFILL_BATCH_SIZE: '3'
         run: python3 scripts/backfill_douban.py
 
       - name: Publish updated CSV and cursor only

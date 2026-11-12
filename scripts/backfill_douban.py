@@ -1,4 +1,4 @@
-"""Backfill at most one older completed Douban mark per category per run."""
+"""Backfill a bounded number of missing completed Douban marks per category."""
 
 import csv
 import json
@@ -72,7 +72,9 @@ def format_mark(mark, kind):
     )))
 
 
-def backfill(root, fetch=fetch_page, pause=time.sleep):
+def backfill(root, fetch=fetch_page, pause=time.sleep, max_new=1):
+    if not 1 <= max_new <= 3:
+        raise ValueError('max_new must be between 1 and 3')
     data = Path(root) / 'data'
     cursor_path = data / 'douban-backfill-cursor.json'
     cursor = json.loads(cursor_path.read_text()) if cursor_path.exists() else {}
@@ -100,9 +102,9 @@ def backfill(root, fetch=fetch_page, pause=time.sleep):
             if item['id'] not in ids:
                 new.append(item)
         new.sort(key=lambda item: item['star_time'], reverse=True)
-        added[kind] = min(len(new), 1)
+        added[kind] = min(len(new), max_new)
         if new:
-            prepared[path] = sorted(rows + new[:1],
+            prepared[path] = sorted(rows + new[:max_new],
                                     key=lambda item: item['star_time'], reverse=True)
         elif len(interests) == PAGE_SIZE:
             cursor[kind] = offset + PAGE_SIZE
@@ -135,7 +137,8 @@ def backfill(root, fetch=fetch_page, pause=time.sleep):
 
 if __name__ == '__main__':
     try:
-        print('Added:', backfill(Path(__file__).resolve().parents[1]), flush=True)
+        print('Added:', backfill(Path(__file__).resolve().parents[1],
+                                 max_new=int(os.environ.get('BACKFILL_BATCH_SIZE', '1'))), flush=True)
     except DoubanBlocked as error:
         print(error, file=sys.stderr, flush=True)
         sys.exit(2)

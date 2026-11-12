@@ -87,6 +87,21 @@ class BackfillTests(unittest.TestCase):
         self.assertEqual(calls, [('movie', 50), ('music', 50), ('book', 50),
                                  ('movie', 100), ('music', 100), ('book', 100)])
 
+    def test_bounded_batch_resumes_remaining_marks_on_next_run(self):
+        def fetch(kind, offset):
+            return [interest(1, '2023-05-06 14:12:37')] + [
+                interest(id, f'2022-04-{id:02d} 10:00:00')
+                for id in range(2, 7)
+            ]
+
+        first = backfill(self.root, fetch, pause=lambda seconds: None, max_new=3)
+        second = backfill(self.root, fetch, pause=lambda seconds: None, max_new=3)
+
+        self.assertEqual(first, {'movie': 3, 'music': 3, 'book': 3})
+        self.assertEqual(second, {'movie': 2, 'music': 2, 'book': 2})
+        self.assertEqual({row['id'] for row in self.rows('movie')},
+                         {str(id) for id in range(1, 7)})
+
     def test_refusal_does_not_write_any_partial_csv(self):
         before = {kind: (self.data / f'{kind}.csv').read_bytes()
                   for kind in ('movie', 'music', 'book')}
