@@ -116,6 +116,7 @@ class BackfillTests(unittest.TestCase):
 
         self.assertEqual(before, {kind: (self.data / f'{kind}.csv').read_bytes()
                                   for kind in before})
+        self.assertTrue((self.root / 'douban-blocked.flag').exists())
 
 
 if __name__ == '__main__':

@@ -2,9 +2,12 @@ name: Backfill Douban completed marks
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '37 2 * * *'
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: profile-repository-writes
@@ -25,6 +28,14 @@ jobs:
         env:
           BACKFILL_BATCH_SIZE: '3'
         run: python3 scripts/backfill_douban.py
+
+      - name: Disable collection after Douban refusal
+        if: ${{ failure() && hashFiles('douban-blocked.flag') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow disable backfill-douban.yml --repo "$GITHUB_REPOSITORY"
+          gh workflow disable fetch_douban.yml --repo "$GITHUB_REPOSITORY"
 
       - name: Publish updated CSV and cursor only
         run: |

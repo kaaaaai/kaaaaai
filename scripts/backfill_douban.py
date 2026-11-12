@@ -72,7 +72,7 @@ def format_mark(mark, kind):
     )))
 
 
-def backfill(root, fetch=fetch_page, pause=time.sleep, max_new=1):
+def _backfill(root, fetch, pause, max_new):
     if not 1 <= max_new <= 3:
         raise ValueError('max_new must be between 1 and 3')
     data = Path(root) / 'data'
@@ -133,6 +133,14 @@ def backfill(root, fetch=fetch_page, pause=time.sleep, max_new=1):
             if os.path.exists(temporary):
                 os.unlink(temporary)
     return added
+
+
+def backfill(root, fetch=fetch_page, pause=time.sleep, max_new=1):
+    try:
+        return _backfill(root, fetch, pause, max_new)
+    except DoubanBlocked:
+        (Path(root) / 'douban-blocked.flag').touch()
+        raise
 
 
 if __name__ == '__main__':
