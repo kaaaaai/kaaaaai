@@ -74,6 +74,8 @@ def format_mark(mark, kind):
 
 def backfill(root, fetch=fetch_page, pause=time.sleep):
     data = Path(root) / 'data'
+    cursor_path = data / 'douban-backfill-cursor.json'
+    cursor = json.loads(cursor_path.read_text()) if cursor_path.exists() else {}
     prepared = {}
     added = {}
     for index, kind in enumerate(KINDS):
@@ -88,22 +90,23 @@ def backfill(root, fetch=fetch_page, pause=time.sleep):
             raise ValueError(f'{kind} CSV missing or has duplicate IDs')
         if index:
             pause(20)
-        offset = (len(rows) // PAGE_SIZE) * PAGE_SIZE
+        offset = cursor.get(kind, (len(rows) // PAGE_SIZE) * PAGE_SIZE)
         interests = fetch(kind, offset)
         if not isinstance(interests, list) or len(interests) > PAGE_SIZE:
             raise DoubanBlocked(f'{kind} response invalid; stop now')
-        oldest = min(row['star_time'] for row in rows)
         new = []
         for mark in interests:
             item = format_mark(mark, kind)
-            if item['id'] not in ids and item['star_time'] < oldest:
+            if item['id'] not in ids:
                 new.append(item)
         new.sort(key=lambda item: item['star_time'], reverse=True)
         added[kind] = min(len(new), 1)
         if new:
             prepared[path] = sorted(rows + new[:1],
                                     key=lambda item: item['star_time'], reverse=True)
-        print(f'{kind}: offset={offset}, response={len(interests)}, older={len(new)}, add={added[kind]}', flush=True)
+        elif len(interests) == PAGE_SIZE:
+            cursor[kind] = offset + PAGE_SIZE
+        print(f'{kind}: offset={offset}, response={len(interests)}, missing={len(new)}, add={added[kind]}', flush=True)
 
     # Network responses for all categories are validated before changing any CSV.
     for path, rows in prepared.items():
@@ -114,6 +117,16 @@ def backfill(root, fetch=fetch_page, pause=time.sleep):
                 writer.writeheader()
                 writer.writerows(rows)
             os.replace(temporary, path)
+        finally:
+            if os.path.exists(temporary):
+                os.unlink(temporary)
+    if cursor and (not cursor_path.exists() or json.loads(cursor_path.read_text()) != cursor):
+        fd, temporary = tempfile.mkstemp(prefix=cursor_path.name + '.', dir=data)
+        try:
+            with os.fdopen(fd, 'w', encoding='utf-8') as file:
+                json.dump(cursor, file, sort_keys=True)
+                file.write('\n')
+            os.replace(temporary, cursor_path)
         finally:
             if os.path.exists(temporary):
                 os.unlink(temporary)

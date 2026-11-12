@@ -56,6 +56,37 @@ class BackfillTests(unittest.TestCase):
         self.assertEqual(self.rows('book')[1]['poster'],
                          'https://dou.img.lithub.cc/book/2.jpg')
 
+    def test_backfills_missing_mark_even_when_newer_than_oldest_csv_entry(self):
+        def fetch(kind, offset):
+            return [interest(2, '2024-01-01 10:00:00'),
+                    interest(1, '2023-05-06 14:12:37')]
+
+        result = backfill(self.root, fetch, pause=lambda seconds: None)
+
+        self.assertEqual(result['movie'], 1)
+        self.assertEqual([row['id'] for row in self.rows('movie')], ['2', '1'])
+
+    def test_advances_cursor_after_full_page_already_in_csv(self):
+        for kind in ('movie', 'music', 'book'):
+            with (self.data / f'{kind}.csv').open('a', newline='') as file:
+                writer = csv.DictWriter(file, fieldnames=HEADERS)
+                for id in range(2, 51):
+                    writer.writerow({'id': str(id), 'title': f'Existing {id}',
+                                     'star_time': '2023-05-06 14:12:37'})
+        calls = []
+        def fetch(kind, offset):
+            calls.append((kind, offset))
+            if offset == 50:
+                return [interest(id, '2023-05-06 14:12:37') for id in range(1, 51)]
+            return [interest(51, '2022-04-01 10:00:00')]
+
+        self.assertEqual(backfill(self.root, fetch, pause=lambda seconds: None),
+                         {'movie': 0, 'music': 0, 'book': 0})
+        self.assertEqual(backfill(self.root, fetch, pause=lambda seconds: None),
+                         {'movie': 1, 'music': 1, 'book': 1})
+        self.assertEqual(calls, [('movie', 50), ('music', 50), ('book', 50),
+                                 ('movie', 100), ('music', 100), ('book', 100)])
+
     def test_refusal_does_not_write_any_partial_csv(self):
         before = {kind: (self.data / f'{kind}.csv').read_bytes()
                   for kind in ('movie', 'music', 'book')}
