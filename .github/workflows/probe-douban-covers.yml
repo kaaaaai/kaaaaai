@@ -44,4 +44,28 @@ jobs:
               except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
                   print(f'{kind} {domain}: {error}')
           print(f'Accessible cover hosts: {passed}/{len(samples)}')
-          sys.exit(0 if passed == len(samples) else 1)
+          # The proxy is known to fail; continue to test direct image discovery.
+      - name: Resolve direct Douban covers
+        shell: python
+        run: |
+          import json
+          import sys
+          import urllib.error
+          import urllib.request
+
+          headers = {'User-Agent': 'Mozilla/5.0', 'Referer': 'https://m.douban.com/'}
+          passed = 0
+          for kind, subject in (('book', '35494160'), ('movie', '37516455')):
+              api = f'https://m.douban.com/rexxar/api/v2/{kind}/{subject}'
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(api, headers=headers), timeout=20) as response:
+                      cover = json.load(response)['cover_url']
+                  with urllib.request.urlopen(urllib.request.Request(cover, headers=headers), timeout=20) as image:
+                      content_type = image.headers.get('Content-Type', '')
+                      ok = image.status == 200 and content_type.startswith('image/') and bool(image.read(16))
+                      print(f'{kind}: API cover HTTP {image.status}, {content_type}, image={ok}')
+                      passed += ok
+              except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, KeyError) as error:
+                  print(f'{kind}: API cover unavailable: {error}')
+          print(f'Accessible direct covers: {passed}/2')
+          sys.exit(0 if passed == 2 else 1)
