@@ -73,8 +73,8 @@ def format_mark(mark, kind):
 
 
 def _backfill(root, fetch, pause, max_new):
-    if not 1 <= max_new <= 3:
-        raise ValueError('max_new must be between 1 and 3')
+    if not 1 <= max_new <= 5:
+        raise ValueError('max_new must be between 1 and 5')
     data = Path(root) / 'data'
     cursor_path = data / 'douban-backfill-cursor.json'
     cursor = json.loads(cursor_path.read_text()) if cursor_path.exists() else {}

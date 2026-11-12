@@ -53,7 +53,7 @@ def run_vps_backfill(root, *, fetch=fetch_page, pause=time.sleep,
             return items
 
         return backfill(root, fetch=fetch_cached,
-                        pause=lambda seconds: pause(seconds + jitter(21)), max_new=3)
+                        pause=lambda seconds: pause(seconds + jitter(21)), max_new=5)
 
 
 if __name__ == '__main__':

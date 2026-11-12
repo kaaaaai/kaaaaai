@@ -152,14 +152,30 @@ class BackfillTests(unittest.TestCase):
                                   jitter=lambda upper: 7, is_allowed=lambda: True,
                                   lock_path=self.root / 'backfill.lock')
 
-        self.assertEqual(result, {'movie': 3, 'music': 3, 'book': 3})
+        self.assertEqual(result, {'movie': 5, 'music': 5, 'book': 5})
         self.assertEqual(pauses, [27, 27])
-        self.assertEqual(len(self.rows('book')), 4)
+        self.assertEqual(len(self.rows('book')), 6)
         second = run_vps_backfill(self.root, fetch=fetch, pause=pauses.append,
                                   jitter=lambda upper: 7, is_allowed=lambda: True,
                                   lock_path=self.root / 'backfill.lock')
-        self.assertEqual(second, {'movie': 2, 'music': 2, 'book': 2})
+        self.assertEqual(second, {'movie': 0, 'music': 0, 'book': 0})
         self.assertEqual(len(self.rows('book')), 6)
+        self.assertEqual(requests, [('movie', 0), ('music', 0), ('book', 0)])
+
+    def test_vps_adds_five_per_kind_while_reusing_the_same_page(self):
+        requests = []
+        def fetch(kind, offset):
+            requests.append((kind, offset))
+            return [interest(id, f'2022-04-{id:02d} 10:00:00')
+                    for id in range(1, 12)]
+
+        batches = [run_vps_backfill(self.root, fetch=fetch,
+                                    pause=lambda seconds: None, jitter=lambda upper: 0,
+                                    is_allowed=lambda: True,
+                                    lock_path=self.root / 'backfill.lock')
+                   for _ in range(3)]
+        self.assertEqual([batch['movie'] for batch in batches], [5, 5, 0])
+        self.assertEqual(len(self.rows('movie')), 11)
         self.assertEqual(requests, [('movie', 0), ('music', 0), ('book', 0)])
 
     def test_vps_corrupt_cache_fails_closed_without_refetch(self):
