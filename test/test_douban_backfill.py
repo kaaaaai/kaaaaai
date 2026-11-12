@@ -1,3 +1,4 @@
+import fcntl
 import csv
 import tempfile
 import unittest
@@ -7,6 +8,7 @@ from pathlib import Path
 
 from scripts.backfill_douban import backfill, DoubanBlocked
 from scripts.check_douban_halt import is_collection_allowed
+from scripts.run_vps_backfill import run_vps_backfill
 
 
 HEADERS = ('id', 'title', 'intro', 'poster', 'pubdate', 'url', 'rating', 'genres',
@@ -138,6 +140,41 @@ class BackfillTests(unittest.TestCase):
         with self.assertRaises(HTTPError):
             is_collection_allowed(fetch=unavailable(503))
 
+
+    def test_vps_batch_is_bounded_and_resumes_from_existing_csv(self):
+        pauses = []
+        def fetch(kind, offset):
+            return [interest(id, f'2022-04-{id:02d} 10:00:00') for id in range(1, 7)]
+
+        result = run_vps_backfill(self.root, fetch=fetch, pause=pauses.append,
+                                  jitter=lambda upper: 7, is_allowed=lambda: True,
+                                  lock_path=self.root / 'backfill.lock')
+
+        self.assertEqual(result, {'movie': 3, 'music': 3, 'book': 3})
+        self.assertEqual(pauses, [27, 27])
+        self.assertEqual(len(self.rows('book')), 4)
+        second = run_vps_backfill(self.root, fetch=fetch, pause=pauses.append,
+                                  jitter=lambda upper: 7, is_allowed=lambda: True,
+                                  lock_path=self.root / 'backfill.lock')
+        self.assertEqual(second, {'movie': 2, 'music': 2, 'book': 2})
+        self.assertEqual(len(self.rows('book')), 6)
+
+    def test_vps_refusal_marker_prevents_future_requests(self):
+        (self.root / 'douban-blocked.flag').touch()
+        with self.assertRaisesRegex(DoubanBlocked, 'previously blocked'):
+            run_vps_backfill(self.root, fetch=lambda *args: self.fail('network request'),
+                             is_allowed=lambda: True, lock_path=self.root / 'backfill.lock')
+
+    def test_vps_shared_signal_and_lock_prevent_overlapping_requests(self):
+        lock_path = self.root / 'backfill.lock'
+        with self.assertRaisesRegex(DoubanBlocked, 'shared refusal'):
+            run_vps_backfill(self.root, fetch=lambda *args: self.fail('network request'),
+                             is_allowed=lambda: False, lock_path=lock_path)
+        with lock_path.open('a') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            with self.assertRaisesRegex(RuntimeError, 'already running'):
+                run_vps_backfill(self.root, fetch=lambda *args: self.fail('network request'),
+                                 is_allowed=lambda: True, lock_path=lock_path)
 
 if __name__ == '__main__':
     unittest.main()
