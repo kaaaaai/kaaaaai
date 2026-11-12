@@ -143,7 +143,9 @@ class BackfillTests(unittest.TestCase):
 
     def test_vps_batch_is_bounded_and_resumes_from_existing_csv(self):
         pauses = []
+        requests = []
         def fetch(kind, offset):
+            requests.append((kind, offset))
             return [interest(id, f'2022-04-{id:02d} 10:00:00') for id in range(1, 7)]
 
         result = run_vps_backfill(self.root, fetch=fetch, pause=pauses.append,
@@ -158,6 +160,16 @@ class BackfillTests(unittest.TestCase):
                                   lock_path=self.root / 'backfill.lock')
         self.assertEqual(second, {'movie': 2, 'music': 2, 'book': 2})
         self.assertEqual(len(self.rows('book')), 6)
+        self.assertEqual(requests, [('movie', 0), ('music', 0), ('book', 0)])
+
+    def test_vps_corrupt_cache_fails_closed_without_refetch(self):
+        cache = self.root / 'vps-page-cache'
+        cache.mkdir()
+        (cache / 'movie-0.json').write_text('not JSON')
+        with self.assertRaisesRegex(DoubanBlocked, 'Cached'):
+            run_vps_backfill(self.root, fetch=lambda *args: self.fail('network request'),
+                             is_allowed=lambda: True, lock_path=self.root / 'backfill.lock')
+        self.assertTrue((self.root / 'douban-blocked.flag').exists())
 
     def test_vps_refusal_marker_prevents_future_requests(self):
         (self.root / 'douban-blocked.flag').touch()
