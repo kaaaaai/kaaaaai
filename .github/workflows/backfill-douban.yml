@@ -21,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      - name: Check shared Douban refusal signal
+        id: shared_halt
+        run: python3 scripts/check_douban_halt.py
+
       - name: Test backfill
         run: python3 -m unittest discover -s test -p test_douban_backfill.py -v
 
@@ -30,7 +34,7 @@ jobs:
         run: python3 scripts/backfill_douban.py
 
       - name: Disable collection after Douban refusal
-        if: ${{ failure() && hashFiles('douban-blocked.flag') != '' }}
+        if: ${{ failure() && (hashFiles('douban-blocked.flag') != '' || steps.shared_halt.outcome == 'failure') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

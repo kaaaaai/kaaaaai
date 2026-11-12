@@ -1,9 +1,12 @@
 import csv
 import tempfile
 import unittest
+from urllib.error import HTTPError
+from unittest.mock import Mock
 from pathlib import Path
 
 from scripts.backfill_douban import backfill, DoubanBlocked
+from scripts.check_douban_halt import is_collection_allowed
 
 
 HEADERS = ('id', 'title', 'intro', 'poster', 'pubdate', 'url', 'rating', 'genres',
@@ -117,6 +120,23 @@ class BackfillTests(unittest.TestCase):
         self.assertEqual(before, {kind: (self.data / f'{kind}.csv').read_bytes()
                                   for kind in before})
         self.assertTrue((self.root / 'douban-blocked.flag').exists())
+
+    def test_shared_stop_signal_blocks_further_collection(self):
+        blocked = Mock()
+        blocked.__enter__ = Mock(return_value=Mock(status=200))
+        blocked.__exit__ = Mock(return_value=False)
+        self.assertFalse(is_collection_allowed(fetch=lambda url, timeout: blocked))
+
+    def test_absent_signal_allows_collection_but_other_errors_fail_closed(self):
+        def unavailable(code):
+            def fetch(url, timeout):
+                error = HTTPError(url, code, 'HTTP error', {}, None)
+                self.addCleanup(error.close)
+                raise error
+            return fetch
+        self.assertTrue(is_collection_allowed(fetch=unavailable(404)))
+        with self.assertRaises(HTTPError):
+            is_collection_allowed(fetch=unavailable(503))
 
 
 if __name__ == '__main__':
