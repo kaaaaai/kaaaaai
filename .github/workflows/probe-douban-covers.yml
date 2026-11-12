@@ -1,0 +1,47 @@
+name: Probe Douban cover access
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Fetch representative cover images
+        shell: python
+        run: |
+          import csv
+          import pathlib
+          import sys
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          samples = {}
+          for kind in ('book', 'movie', 'music'):
+              with (pathlib.Path('data') / f'{kind}.csv').open(newline='') as source:
+                  for row in csv.DictReader(source):
+                      domain = urllib.parse.urlparse(row['poster']).hostname
+                      if domain not in samples:
+                          samples[domain] = (kind, row['poster'])
+
+          passed = 0
+          for domain, (kind, url) in samples.items():
+              request = urllib.request.Request(
+                  url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://www.douban.com/'}
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=20) as response:
+                      content_type = response.headers.get('Content-Type', '')
+                      signature = response.read(16)
+                      ok = response.status == 200 and content_type.startswith('image/') and bool(signature)
+                      print(f'{kind} {domain}: HTTP {response.status}, {content_type}, image={ok}')
+                      passed += ok
+              except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+                  print(f'{kind} {domain}: {error}')
+          print(f'Accessible cover hosts: {passed}/{len(samples)}')
+          sys.exit(0 if passed == len(samples) else 1)
