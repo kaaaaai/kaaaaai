@@ -2,11 +2,16 @@ import fcntl
 import csv
 import tempfile
 import unittest
-from urllib.error import HTTPError
-from unittest.mock import Mock
+from urllib.error import HTTPError, URLError
+from unittest.mock import Mock, patch
 from pathlib import Path
 
-from scripts.backfill_douban import backfill, DoubanBlocked
+from scripts.backfill_douban import (
+    backfill,
+    DoubanBlocked,
+    DoubanUnavailable,
+    fetch_page,
+)
 from scripts.check_douban_halt import is_collection_allowed
 from scripts.run_vps_backfill import run_vps_backfill
 
@@ -122,6 +127,53 @@ class BackfillTests(unittest.TestCase):
         self.assertEqual(before, {kind: (self.data / f'{kind}.csv').read_bytes()
                                   for kind in before})
         self.assertTrue((self.root / 'douban-blocked.flag').exists())
+
+    def test_transient_fetch_failures_do_not_mark_or_write(self):
+        before = {path.name: path.read_bytes() for path in self.data.glob('*.csv')}
+        failures = (
+            TimeoutError('timed out'),
+            URLError('temporary DNS failure'),
+            HTTPError('https://frodo.douban.com', 503, 'unavailable', {}, None),
+        )
+
+        for error in failures:
+            with self.subTest(error=type(error).__name__):
+                def fetch(kind, offset):
+                    if kind != 'book':
+                        return [interest(1, '2023-05-06 14:12:37'),
+                                interest(2, '2022-04-01 10:00:00')]
+                    with patch('scripts.backfill_douban.urlopen', side_effect=error):
+                        return fetch_page(kind, offset)
+
+                with self.assertRaises(DoubanUnavailable):
+                    backfill(self.root, fetch, pause=lambda seconds: None)
+
+                self.assertFalse((self.root / 'douban-blocked.flag').exists())
+                self.assertFalse((self.data / 'douban-backfill-cursor.json').exists())
+                self.assertEqual(
+                    before,
+                    {path.name: path.read_bytes() for path in self.data.glob('*.csv')},
+                )
+
+    def test_explicit_http_refusals_mark_without_writing(self):
+        before = {path.name: path.read_bytes() for path in self.data.glob('*.csv')}
+
+        for code in (403, 418, 429):
+            with self.subTest(code=code):
+                error = HTTPError(
+                    'https://frodo.douban.com', code, 'refused', {}, None
+                )
+                with patch('scripts.backfill_douban.urlopen', side_effect=error):
+                    with self.assertRaisesRegex(DoubanBlocked, str(code)):
+                        backfill(self.root, pause=lambda seconds: None)
+
+                self.assertTrue((self.root / 'douban-blocked.flag').exists())
+                (self.root / 'douban-blocked.flag').unlink()
+                self.assertFalse((self.data / 'douban-backfill-cursor.json').exists())
+                self.assertEqual(
+                    before,
+                    {path.name: path.read_bytes() for path in self.data.glob('*.csv')},
+                )
 
     def test_shared_stop_signal_blocks_further_collection(self):
         blocked = Mock()

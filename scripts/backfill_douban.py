@@ -25,6 +25,10 @@ class DoubanBlocked(RuntimeError):
     """Stop immediately rather than retrying or changing endpoints."""
 
 
+class DoubanUnavailable(RuntimeError):
+    """Fail this run without treating a temporary outage as a refusal."""
+
+
 def fetch_page(kind, offset):
     url = 'https://frodo.douban.com/api/v2/user/kaaaaai/interests?' + urlencode({
         'type': kind, 'status': 'done', 'count': PAGE_SIZE,
@@ -36,13 +40,27 @@ def fetch_page(kind, offset):
     })
     try:
         with urlopen(request, timeout=15) as response:
-            if response.status != 200:
+            if response.status in (403, 418, 429):
                 raise DoubanBlocked(f'Douban refused HTTP {response.status}; stop now')
+            if response.status != 200:
+                raise DoubanUnavailable(
+                    f'Douban temporarily unavailable HTTP {response.status}'
+                )
             payload = json.load(response)
     except HTTPError as error:
-        raise DoubanBlocked(f'Douban refused HTTP {error.code}; stop now') from error
-    except (URLError, TimeoutError, ValueError) as error:
-        raise DoubanBlocked(f'Douban response unavailable or invalid; stop now: {error}') from error
+        if error.code in (403, 418, 429):
+            raise DoubanBlocked(f'Douban refused HTTP {error.code}; stop now') from error
+        if 500 <= error.code < 600:
+            raise DoubanUnavailable(
+                f'Douban temporarily unavailable HTTP {error.code}'
+            ) from error
+        raise DoubanUnavailable(f'Douban request failed HTTP {error.code}') from error
+    except (URLError, TimeoutError) as error:
+        raise DoubanUnavailable(f'Douban temporarily unavailable: {error}') from error
+    except ValueError as error:
+        raise DoubanBlocked(
+            f'Douban response invalid or requires verification; stop now: {error}'
+        ) from error
     if not isinstance(payload, dict) or not isinstance(payload.get('interests'), list):
         raise DoubanBlocked('Douban response changed or requires verification; stop now')
     return payload['interests']
@@ -150,3 +168,6 @@ if __name__ == '__main__':
     except DoubanBlocked as error:
         print(error, file=sys.stderr, flush=True)
         sys.exit(2)
+    except DoubanUnavailable as error:
+        print(error, file=sys.stderr, flush=True)
+        sys.exit(1)

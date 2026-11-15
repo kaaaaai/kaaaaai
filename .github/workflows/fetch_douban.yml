@@ -45,6 +45,9 @@ jobs:
           type: book
           format: csv
           dir: ./data
+      - name: Validate Douban CSV preserves existing subjects
+        run: python3 -m scripts.validate_douban_csv
+
       - name: Commit and push if changed
         run: |-
           git config --global user.email "action@github.com"
