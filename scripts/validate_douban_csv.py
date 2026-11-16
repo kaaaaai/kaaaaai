@@ -8,7 +8,7 @@ from pathlib import Path
 from scripts.backfill_douban import FIELDS
 
 
-KINDS = ('book', 'movie', 'music')
+KINDS = ('book', 'movie', 'music', 'game')
 
 
 def validate_csv(previous_text, current_text):
@@ -25,7 +25,8 @@ def validate_csv(previous_text, current_text):
             raise ValueError('Douban CSV has duplicate subject IDs')
         return set(subjects)
 
-    missing = ids(previous_text) - ids(current_text)
+    current_ids = ids(current_text)
+    missing = ids(previous_text) - current_ids if previous_text is not None else set()
     if missing:
         raise ValueError(f'Douban CSV missing {len(missing)} existing subject IDs')
 
@@ -33,9 +34,12 @@ def validate_csv(previous_text, current_text):
 def main():
     for kind in KINDS:
         path = Path('data') / f'{kind}.csv'
-        previous = subprocess.run(['git', 'show', f'HEAD:{path}'],
-                                  check=True, capture_output=True, text=True).stdout
-        validate_csv(previous, path.read_text(encoding='utf-8-sig'))
+        result = subprocess.run(['git', 'show', f'HEAD:{path}'],
+                                capture_output=True, text=True)
+        if result.returncode and kind != 'game':
+            result.check_returncode()
+        validate_csv(result.stdout if result.returncode == 0 else None,
+                     path.read_text(encoding='utf-8-sig'))
         print(f'{kind}: retained all existing subject IDs')
 
 
