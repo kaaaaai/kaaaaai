@@ -46,12 +46,7 @@ jobs:
           format: csv
           dir: ./data
       - name: game
-        uses: lizheming/doumark-action@b10baabac45771af497f1cf34d878fb3f952f9ff
-        with:
-          id: kaaaaai
-          type: game
-          format: csv
-          dir: ./data
+        run: python3 -m scripts.fetch_douban_game
       - name: Validate Douban CSV preserves existing subjects
         run: python3 -m scripts.validate_douban_csv
 
