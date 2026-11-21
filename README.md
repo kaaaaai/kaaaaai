@@ -32,6 +32,7 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [想看约定的梦幻岛](https://movie.douban.com/subject/30206430/) 2026-11-20
 - [玩过黑神话：悟空 Black Myth: Wukong](http://www.douban.com/game/35184766/) 2026-11-16
 - [看过出走的决心](https://movie.douban.com/subject/36587974/) 2026-11-16
 - [看过空枪](https://movie.douban.com/subject/37508847/) 2026-11-07
@@ -41,7 +42,6 @@ He is always curious and interested in technology and love.
 - [看过年少日记](https://movie.douban.com/subject/34940879/) 2026-09-12
 - [看过抓特务](https://movie.douban.com/subject/36812879/) 2026-09-12
 - [看过南京照相馆](https://movie.douban.com/subject/36809864/) 2026-09-12
-- [看过现在不是出轨的问题](https://movie.douban.com/subject/37501131/) 2026-09-07
 <!-- douban ends -->
 
 
