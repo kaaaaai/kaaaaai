@@ -2,7 +2,7 @@ name: fetch douban
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "17 1,5,9,13,17,21 * * *"
 
 env:
   TZ: Asia/Shanghai
