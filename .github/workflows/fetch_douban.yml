@@ -51,6 +51,7 @@ jobs:
         run: python3 -m scripts.validate_douban_csv
 
       - name: Commit and push if changed
+        id: csv_push
         run: |-
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
@@ -59,3 +60,9 @@ jobs:
           git commit -m "ci: sync douban mark data"
           git pull --rebase
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Trigger media publication after CSV push
+        if: steps.csv_push.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: gh api --method POST repos/kaaaaai/kaaaaai.tools.token-usage-data/dispatches -f event_type=douban-csv-updated
