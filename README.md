@@ -32,6 +32,8 @@ He is always curious and interested in technology and love.
 ## 🛸 书影音最近体验
 
 <!-- douban starts -->
+- [看过生化危机：爆发夜](https://movie.douban.com/subject/37068446/) 2026-11-27
+- [想读情有可原](https://book.douban.com/subject/37938905/) 2026-11-26
 - [看过八仙！](https://movie.douban.com/subject/36882191/) 2026-11-23
 - [看过可能的爱](https://movie.douban.com/subject/36847425/) 2026-11-22
 - [想看约定的梦幻岛](https://movie.douban.com/subject/30206430/) 2026-11-20
@@ -40,8 +42,6 @@ He is always curious and interested in technology and love.
 - [看过空枪](https://movie.douban.com/subject/37508847/) 2026-11-07
 - [看过杯雪·一战成名](https://movie.douban.com/subject/37516455/) 2026-11-01
 - [看过东京少女](https://movie.douban.com/subject/2330733/) 2026-10-04
-- [看过绿灯军团](https://movie.douban.com/subject/36225837/) 2026-09-28
-- [看过年少日记](https://movie.douban.com/subject/34940879/) 2026-09-12
 <!-- douban ends -->
 
 
